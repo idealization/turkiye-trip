@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0d5d62" />
+<title>튀르키예 여행 컴패니언 · 2026</title>
+<style>
+:root{
+  --bg:#f4f1ea; --card:#fffdf8; --ink:#14282c; --muted:#66777a;
+  --sea:#0d5d62; --sea2:#2e7d7b; --sky:#dceeea; --sun:#f2b66d;
+  --coral:#d86a54; --line:#e3e5df; --ok:#2f7d58; --warn:#a85b22;
+  --shadow:0 12px 30px rgba(20,40,44,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#eaf5f2 0,#f4f1ea 250px);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",Segoe UI,sans-serif;word-break:keep-all}
+a{color:inherit}
+button,a.btn{font:inherit}
+.shell{max-width:760px;margin:auto;min-height:100vh;padding-bottom:96px}
+.hero{padding:28px 20px 20px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-90px;top:-110px;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.9),rgba(242,182,109,.28) 45%,transparent 70%)}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.13em;color:var(--sea);text-transform:uppercase}
+h1{font-size:34px;line-height:1.14;margin:9px 0 10px;letter-spacing:-.04em}
+.hero p{margin:0;color:#456266;line-height:1.7}
+.route{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.route span{font-size:12px;font-weight:700;padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.68);border:1px solid rgba(13,93,98,.12)}
+.top-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.top-actions button,.top-actions a{border:0;border-radius:16px;padding:13px 14px;text-decoration:none;text-align:center;font-weight:800;cursor:pointer}.primary{background:var(--sea);color:white}.secondary{background:white;color:var(--sea);box-shadow:var(--shadow)}
+.notice{margin:0 16px 14px;background:#fff8e8;border:1px solid #f0d7a7;border-radius:16px;padding:13px 15px;color:#694c1f;font-size:13px;line-height:1.6}
+.tabs{position:sticky;top:0;z-index:20;display:flex;gap:8px;overflow:auto;padding:10px 12px;background:rgba(244,241,234,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,40,44,.07);scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs button{border:1px solid #d8ddd7;background:#fff;border-radius:999px;padding:9px 13px;white-space:nowrap;color:#456266;font-weight:700}.tabs button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.section{padding:14px 16px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:12px 2px 10px}.section-title h2{margin:0;font-size:22px;letter-spacing:-.03em}.section-title small{color:var(--muted)}
+.today-card{background:linear-gradient(135deg,var(--sea),#17454b);color:white;border-radius:24px;padding:18px;box-shadow:var(--shadow);margin:0 0 14px}.today-card .mini{font-size:12px;opacity:.8}.today-card h2{margin:5px 0 8px;font-size:24px}.today-card p{margin:0;line-height:1.65;color:#eaf6f4}.today-card .today-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.today-card a{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:12px;padding:9px 11px;text-decoration:none;font-size:13px;font-weight:800}
+.day{background:var(--card);border:1px solid #e5e7e1;border-radius:22px;margin:12px 0;box-shadow:0 6px 18px rgba(20,40,44,.045);overflow:hidden}.day-head{padding:16px 16px 12px;display:flex;justify-content:space-between;gap:12px}.date{font-size:12px;font-weight:900;color:var(--sea);letter-spacing:.06em}.day h3{font-size:20px;letter-spacing:-.025em;margin:4px 0 0}.city-badge{align-self:flex-start;background:var(--sky);color:var(--sea);font-size:11px;font-weight:900;padding:7px 9px;border-radius:999px}.timeline{padding:0 16px 8px}.row{display:grid;grid-template-columns:68px 1fr;gap:10px;padding:11px 0;border-top:1px solid var(--line)}.row:first-child{border-top:0}.time{font-size:13px;color:var(--sea);font-weight:900}.what{font-size:15px;line-height:1.55}.what b{font-weight:900}.sub{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.5}
+.place-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}.mapbtn,.routebtn,.softbtn{display:inline-flex;align-items:center;gap:5px;border-radius:11px;text-decoration:none;font-size:12px;font-weight:900;padding:8px 10px}.mapbtn{background:#edf7f5;color:var(--sea)}.routebtn{background:#fff1ec;color:#9b4b38}.softbtn{background:#f3f3ef;color:#566467}
+.tip{margin:0 16px 15px;padding:12px 13px;border-radius:14px;background:#f7f4ed;color:#4e5f62;font-size:13px;line-height:1.6}.tip strong{color:#3c4e51}.tip.warn{background:#fff2e7;color:#7a451e}.tip.ok{background:#edf7f0;color:#356348}
+.details{border-top:1px solid var(--line);padding:0 16px 14px}.details summary{cursor:pointer;color:var(--sea);font-weight:900;padding:13px 0 3px}.details p,.details li{font-size:13px;color:#53676a;line-height:1.7}.details ul{padding-left:20px}
+.antalya-feature{background:linear-gradient(160deg,#edf8f5,#fffdf8 48%,#fff1e7);border:1px solid #d7e7e3;border-radius:24px;padding:17px;margin:12px 0}.antalya-feature h3{margin:0 0 7px;font-size:21px}.antalya-feature p{margin:0;color:#557074;line-height:1.65;font-size:14px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.chips span{font-size:11px;font-weight:800;padding:6px 9px;border-radius:999px;background:#fff;border:1px solid #dde8e4}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.info{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px}.info b{display:block;font-size:13px;margin-bottom:4px}.info span{font-size:12px;color:var(--muted);line-height:1.55}
+.checks{display:grid;gap:8px}.check{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:12px;border-radius:14px}.check input{margin-top:3px;width:18px;height:18px;accent-color:var(--sea)}.check label{font-size:13px;line-height:1.5}
+.hotel{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px;margin:8px 0}.hotel b{display:block;font-size:14px}.hotel small{color:var(--muted);line-height:1.5}.hotel a{flex:0 0 auto;text-decoration:none;color:white;background:var(--sea);padding:9px 10px;border-radius:11px;font-size:12px;font-weight:900}
+.bottom-nav{position:fixed;z-index:30;left:50%;bottom:max(10px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(720px,calc(100% - 24px));display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:7px;background:rgba(19,38,42,.93);backdrop-filter:blur(16px);border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,.22)}.bottom-nav button{border:0;background:transparent;color:#e7eeee;border-radius:14px;padding:8px 4px;font-size:11px;font-weight:800}.bottom-nav button strong{display:block;font-size:18px;line-height:1.1;margin-bottom:3px}
+.sheet{display:none;position:fixed;z-index:50;inset:0;background:rgba(7,19,21,.42);padding:10vh 12px 12px}.sheet.open{display:flex;align-items:flex-end}.sheet-card{width:min(720px,100%);margin:auto;background:#fbfaf6;border-radius:24px;max-height:80vh;overflow:auto;padding:18px}.sheet-card h2{margin:0 0 10px}.sheet-card .close{float:right;border:0;background:#eceeea;border-radius:999px;width:34px;height:34px;font-size:18px}.map-list{display:grid;gap:9px}.map-list a{display:flex;justify-content:space-between;gap:10px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:13px;padding:11px 12px;font-size:13px}.map-list a span:last-child{color:var(--sea);font-weight:900}
+.hidden{display:none!important}.footer{padding:26px 18px 16px;color:#728184;font-size:12px;line-height:1.7;text-align:center}
+@media(min-width:620px){.hero{padding:38px 28px 22px}.section{padding-left:24px;padding-right:24px}.grid2{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="hero" id="top">
+  <div class="kicker">Türkiye · Sep 26 — Oct 8, 2026</div>
+  <h1>여행 중에 바로 보는<br>튀르키예 컴패니언</h1>
+  <p>이스탄불 → 카파도키아 → <b>안탈리아</b> → 파묵칼레 → 이스탄불. 장소 누르면 바로 구글맵 리뷰로 연결돼.</p>
+  <div class="route"><span>IST 이스탄불</span><span>ASR 카파도키아</span><span>AYT 안탈리아</span><span>DNZ 파묵칼레</span></div>
+  <div class="top-actions"><button class="primary" onclick="goToday()">📍 오늘 일정 보기</button><button class="secondary" onclick="openSheet('mapSheet')">🗺️ 장소 모아보기</button></div>
+</header>
+<div class="notice">✦ <b>현지 운영시간·투어 픽업은 바우처 우선.</b> 이 페이지는 네 일정 파일 기준으로 만들었고, 안탈리아 10/2–10/4만 현장 쓰기 좋게 더 촘촘하게 보강했어.</div>
+<nav class="tabs" id="tabs">
+  <button class="active" data-filter="all">전체</button><button data-filter="istanbul">이스탄불</button><button data-filter="cappadocia">카파도키아</button><button data-filter="antalya">안탈리아</button><button data-filter="pamukkale">파묵칼레</button>
+</nav>
+
+<section class="section" id="todaySection">
+  <div id="todayCard" class="today-card"><div class="mini">여행 전</div><h2>9월 26일부터 시작!</h2><p>출발 전에는 아래 체크리스트랑 예약 확정사항만 보면 돼.</p></div>
+</section>
+
+<section class="section city-section" data-city="antalya" id="antalya-guide">
+  <div class="section-title"><h2>🌊 안탈리아 업그레이드</h2><small>10/2–10/5</small></div>
+  <div class="antalya-feature">
+    <h3>“구시가지 + 바다 + 섬투어”로 역할 분담</h3>
+    <p>10/2는 칼레이치·항구·가까운 바다, 10/3은 술루아다 하루 통째로, 10/4는 Lower Düden + 안탈리아식 점심 + 콘얄트 해변으로 잡으면 서로 안 겹치고 딱 좋아.</p>
+    <div class="chips"><span>10/2 사진·산책</span><span>10/3 수영·보트</span><span>10/4 폭포·해변</span><span>10/5 이동</span></div>
+  </div>
+  <div class="grid2">
+    <div class="info"><b>🏨 숙소</b><span>House of Good Things · Kaleiçi</span></div>
+    <div class="info"><b>🚕 이동</b><span>4인이라 시내는 택시 분담이 편함</span></div>
+    <div class="info"><b>👟 노면</b><span>칼레이치 돌길·경사 있음</span></div>
+    <div class="info"><b>🧴 바다날</b><span>선크림·타월·방수팩 필수</span></div>
+  </div>
+</section>
+
+<main class="section" id="schedule">
+  <div class="section-title"><h2>전체 일정</h2><small>장소 → 구글맵 리뷰</small></div>
+
+  <article class="day" data-city="istanbul" data-date="2026-09-26" id="d0926">
+    <div class="day-head"><div><div class="date">9/26 토</div><h3>이스탄불 도착</h3></div><span class="city-badge">ISTANBUL</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">17:00</div><div class="what"><b>IST 도착</b><div class="sub">입국·수하물 → 첫 Airbnb 체크인</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Istanbul+Airport+IST" target="_blank">⭐ 지도·리뷰</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Kucuk+Ayasofya+Mahallesi+Sehit+Mehmet+Pasa+Sokak+No+21+Fatih+Istanbul" target="_blank">🏠 숙소</a></div></div></div>
+      <div class="row"><div class="time">저녁</div><div class="what">숙소 근처 가벼운 저녁 · 일찍 쉬기</div></div>
+    </div>
+    <div class="tip">9/28 새벽 공항 이동이 있어서 첫날은 욕심 금지. 여행 초반부터 체력 대출받으면 이자가 셈 😇</div>
+  </article>
+
+  <article class="day" data-city="istanbul" data-date="2026-09-27" id="d0927">
+    <div class="day-head"><div><div class="date">9/27 일</div><h3>돌마바흐체 → 베식타시 → 발랏</h3></div><span class="city-badge">ISTANBUL</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">09:00</div><div class="what"><b>돌마바흐체 궁전</b><div class="sub">2–3시간</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Dolmabahce+Palace+Istanbul" target="_blank">⭐ 리뷰</a></div></div></div>
+      <div class="row"><div class="time">점심</div><div class="what"><b>Beşiktaş</b> 미디예 돌마·코코레치<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Midyeci+Ahmet+Besiktas" target="_blank">Midyeci Ahmet</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Gala+Kokorec+Besiktas" target="_blank">Gala Kokoreç</a></div></div></div>
+      <div class="row"><div class="time">14:30</div><div class="what"><b>발랏·페네르</b> 골목 산책<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Balat+Fener+Istanbul" target="_blank">⭐ 지도·리뷰</a></div></div></div>
+    </div>
+  </article>
+
+  <article class="day" data-city="cappadocia" data-date="2026-09-28" id="d0928">
+    <div class="day-head"><div><div class="date">9/28 월</div><h3>카파도키아 도착 + 로즈밸리 일몰</h3></div><span class="city-badge">CAPPADOCIA</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">08:25</div><div class="what">IST → ASR 09:50</div></div>
+      <div class="row"><div class="time">낮</div><div class="what"><b>Elegance Cave Suites</b> 짐·점심·휴식<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Elegance+Cave+Suites+Goreme" target="_blank">🏠 호텔 리뷰</a></div></div></div>
+      <div class="row"><div class="time">해질녘</div><div class="what"><b>Rose Valley</b> 예약 투어<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Rose+Valley+Cappadocia" target="_blank">⭐ 지도·리뷰</a></div></div></div>
+    </div>
+  </article>
+
+  <article class="day" data-city="cappadocia" data-date="2026-09-29" id="d0929">
+    <div class="day-head"><div><div class="date">9/29 화</div><h3>벌룬 1차 + 그린투어</h3></div><span class="city-badge">CAPPADOCIA</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">새벽</div><div class="what"><b>열기구 1차 시도</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia+balloons" target="_blank">주변 보기</a></div></div></div>
+      <div class="row"><div class="time">10:00</div><div class="what"><b>그린투어</b> · 데린쿠유 → 으흘라라 → 셀리메<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Derinkuyu+Underground+City" target="_blank">데린쿠유</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Ihlara+Valley" target="_blank">으흘라라</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Selime+Monastery" target="_blank">셀리메</a></div></div></div>
+    </div>
+  </article>
+
+  <article class="day" data-city="cappadocia" data-date="2026-09-30" id="d0930">
+    <div class="day-head"><div><div class="date">9/30 수</div><h3>렌터카 레드루트</h3></div><span class="city-badge">CAPPADOCIA</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">10:00</div><div class="what">렌터카 인수 → <b>Çavuşin · Paşabağ</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Cavusin+Cappadocia" target="_blank">Çavuşin</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Pasabag+Cappadocia" target="_blank">Paşabağ</a></div></div></div>
+      <div class="row"><div class="time">점심</div><div class="what"><b>Avanos</b> 강변·도자기<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Avanos+Cappadocia" target="_blank">⭐ 리뷰</a></div></div></div>
+      <div class="row"><div class="time">오후</div><div class="what"><b>Devrent</b> · 체력 남으면 Zelve<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Devrent+Valley" target="_blank">Devrent</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Zelve+Open+Air+Museum" target="_blank">Zelve</a></div></div></div>
+    </div>
+  </article>
+
+  <article class="day" data-city="cappadocia" data-date="2026-10-01" id="d1001">
+    <div class="day-head"><div><div class="date">10/1 목</div><h3>벌룬 예비 3차 + 선택 일정</h3></div><span class="city-badge">CAPPADOCIA</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">오전</div><div class="what"><b>Uçhisar Castle</b> 또는 Göreme Open Air Museum<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Uchisar+Castle" target="_blank">Uçhisar</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Goreme+Open+Air+Museum" target="_blank">야외박물관</a></div></div></div>
+      <div class="row"><div class="time">오후</div><div class="what"><b>Tuz Gölü</b>는 컨디션 좋을 때만<div class="sub">일몰 고집하면 야간운전 + 다음날 새벽 공항</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Tuz+Golu+Turkey" target="_blank">위치 참고</a></div></div></div>
+      <div class="row"><div class="time">22:00</div><div class="what">렌터카 반납</div></div>
+    </div>
+    <div class="tip warn"><strong>중단 기준:</strong> 지도상 괴레메 복귀가 21시 넘거나 피곤하면 소금호수 일몰은 포기. 다음날 비행이 더 중요!</div>
+  </article>
+
+  <article class="day" data-city="antalya" data-date="2026-10-02" id="d1002">
+    <div class="day-head"><div><div class="date">10/2 금</div><h3>안탈리아 ① 칼레이치 + 가까운 바다</h3></div><span class="city-badge">ANTALYA</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">09:50</div><div class="what"><b>AYT 도착</b> → 택시로 Kaleiçi<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Antalya+Airport+AYT" target="_blank">공항</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=House+of+Good+Things+Antalya" target="_blank">🏠 호텔 리뷰</a></div></div></div>
+      <div class="row"><div class="time">12:00</div><div class="what"><b>짐 맡기고 점심</b><div class="sub">첫날이라 호텔 주변에서 가볍게</div></div></div>
+      <div class="row"><div class="time">13:30</div><div class="what"><b>Mermerli Beach</b> · 날씨 좋으면 1–2시간 수영<div class="sub">호텔/옛 항구 바로 근처라 “도착날 바다 찍먹”용</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Mermerli+Beach+Antalya" target="_blank">⭐ 리뷰</a></div></div></div>
+      <div class="row"><div class="time">16:00</div><div class="what"><b>Hadrian’s Gate → Kaleiçi 골목 → Old City Marina</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Hadrians+Gate+Antalya" target="_blank">하드리아누스</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Kaleici+Old+Town+Antalya" target="_blank">칼레이치</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Old+City+Marina+Antalya" target="_blank">옛 항구</a></div></div></div>
+      <div class="row"><div class="time">18:00</div><div class="what"><b>Hıdırlık Tower + Karaalioğlu Park</b> 일몰 산책<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Hidirlik+Tower+Antalya" target="_blank">Hıdırlık</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Karaalioglu+Park+Antalya" target="_blank">공원</a></div></div></div>
+    </div>
+    <div class="tip ok"><strong>이날 핵심:</strong> 멀리 안 나가고 숙소 반경에서 사진·바다·구시가지를 끝내기. 술루아다 전날이라 체력도 남겨둬.</div>
+    <details class="details"><summary>왜 이렇게 바꿨냐면</summary><p>기존 일정은 하드리아누스의 문·옛 항구·카라알리올루만 있어서 오후가 살짝 비었어. 숙소 바로 근처의 Mermerli Beach를 옵션으로 넣으면 이동 추가 없이 지중해 첫날 느낌을 확 살릴 수 있어.</p></details>
+  </article>
+
+  <article class="day" data-city="antalya" data-date="2026-10-03" id="d1003">
+    <div class="day-head"><div><div class="date">10/3 토</div><h3>안탈리아 ② 술루아다 풀데이</h3></div><span class="city-badge">ANTALYA</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">아침</div><div class="what"><b>칼레이치 픽업</b> → Adrasan Harbour<div class="sub">실제 시간·승차 핀은 예약 바우처가 최우선</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Adrasan+Harbour+Antalya" target="_blank">항구 리뷰</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Suluada+Turkey" target="_blank">Suluada</a></div></div></div>
+      <div class="row"><div class="time">낮</div><div class="what"><b>보트 · 수영 · 선상 점심</b><div class="sub">수영복·타월·방수팩·얇은 겉옷</div></div></div>
+      <div class="row"><div class="time">저녁</div><div class="what">안탈리아 복귀 → 호텔 근처에서 늦은 저녁<div class="sub">귀환이 밀릴 수 있으니 저녁 예약은 빡빡하게 잡지 않기</div></div></div>
+    </div>
+    <div class="tip warn"><strong>10월 바다:</strong> 바람·파도에 따라 체감이 확 달라져. 젖은 뒤 입을 얇은 셔츠/바람막이 하나 챙겨.</div>
+    <details class="details"><summary>현재 확인해둔 운영 메모</summary><ul><li>Antalya 출발 술루아다 상품 중 일부는 10월에 화·목·토 운항을 안내하고 있어 10/3 토요일과 맞아.</li><li>모든 배는 Adrasan Harbour에서 출항하므로 “안탈리아 구항에서 바로 배 타는 투어”로 착각하면 안 돼.</li><li>네가 실제 예약한 상품의 픽업 포함 여부와 칼레이치 승차 핀은 반드시 바우처 기준.</li></ul></details>
+  </article>
+
+  <article class="day" data-city="antalya" data-date="2026-10-04" id="d1004">
+    <div class="day-head"><div><div class="date">10/4 일</div><h3>안탈리아 ③ Lower Düden + 로컬 점심 + 콘얄트</h3></div><span class="city-badge">ANTALYA</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">09:30</div><div class="what"><b>Lower Düden Waterfall</b><div class="sub">바다 절벽으로 바로 떨어지는 쪽. Upper Düden이랑 다름!</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Lower+Duden+Waterfalls+Antalya" target="_blank">⭐ 리뷰</a></div></div></div>
+      <div class="row"><div class="time">11:30</div><div class="what"><b>Piyazcı Ahmet</b> · tahinli piyaz + köfte<div class="sub">4명이면 피야즈·쾨프테·카박 타틀르스 나눠먹기 좋음</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Piyazci+Ahmet+Antalya" target="_blank">⭐ 식당 리뷰</a></div></div></div>
+      <div class="row"><div class="time">13:30</div><div class="what"><b>Konyaaltı Beach</b> · 수영/카페/멍<div class="sub">긴 자갈 해변이라 술루아다와 분위기가 완전 다름</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Konyaalti+Beach+Antalya" target="_blank">⭐ 리뷰</a></div></div></div>
+      <div class="row"><div class="time">17:00</div><div class="what">칼레이치 복귀 · 쇼핑·카페·짐 정리<div class="sub">다음날 08:30 버스라 저녁엔 터미널 이동/티켓도 확인</div></div></div>
+    </div>
+    <div class="tip"><strong>택시 추천:</strong> Lower Düden → Piyazcı Ahmet → Konyaaltı를 4명이 움직이면 대중교통 환승 스트레스보다 택시 분담이 꽤 합리적이야.</div>
+    <details class="details"><summary>플랜 B · 10/3 술루아다 취소 시</summary><p>10/4로 술루아다 변경이 실제로 가능할 때만 바꾸고, 폭포·피야즈·콘얄트는 과감히 포기. 좌석 없거나 날씨가 계속 안 좋으면 이 도시 일정 그대로 진행해. Antalya Archaeology Museum은 현재 임시 휴관 표시라 우천 대체로 넣지 않았어.</p></details>
+  </article>
+
+  <article class="day" data-city="antalya" data-date="2026-10-05" id="d1005">
+    <div class="day-head"><div><div class="date">10/5 월</div><h3>안탈리아 → 데니즐리</h3></div><span class="city-badge">ANTALYA → PAM</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">08:00</div><div class="what"><b>Antalya Otogarı 도착 목표</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Antalya+Otogar" target="_blank">터미널</a></div></div></div>
+      <div class="row"><div class="time">08:30</div><div class="what">데니즐리행 버스 → 11:45 예정</div></div>
+    </div>
+  </article>
+
+  <article class="day" data-city="pamukkale" data-date="2026-10-05" id="d1005pam">
+    <div class="day-head"><div><div class="date">10/5 월 · 오후</div><h3>파묵칼레 + 히에라폴리스</h3></div><span class="city-badge">PAMUKKALE</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">14:00쯤</div><div class="what"><b>Hierapolis</b> → 석회붕<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Hierapolis+Pamukkale" target="_blank">히에라폴리스</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Pamukkale+Travertines" target="_blank">석회붕</a></div></div></div>
+      <div class="row"><div class="time">저녁</div><div class="what"><b>Hotel Goreme Sakura</b> · 다음날 공항차 재확인<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Hotel+Goreme+Sakura+Pamukkale" target="_blank">🏠 호텔 리뷰</a></div></div></div>
+    </div>
+  </article>
+
+  <article class="day" data-city="istanbul" data-date="2026-10-06" id="d1006">
+    <div class="day-head"><div><div class="date">10/6 화</div><h3>이스탄불 복귀 + 블루모스크·쇼핑</h3></div><span class="city-badge">ISTANBUL</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">08:25</div><div class="what">DNZ → IST 09:45</div></div>
+      <div class="row"><div class="time">오후</div><div class="what"><b>Blue Mosque → Grand Bazaar</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Blue+Mosque+Istanbul" target="_blank">블루모스크</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Grand+Bazaar+Istanbul" target="_blank">그랜드바자르</a></div></div></div>
+      <div class="row"><div class="time">저녁</div><div class="what">Eminönü 또는 Karaköy<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Eminonu+Istanbul" target="_blank">Eminönü</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Karakoy+Istanbul" target="_blank">Karaköy</a></div></div></div>
+    </div>
+  </article>
+
+  <article class="day" data-city="istanbul" data-date="2026-10-07" id="d1007">
+    <div class="day-head"><div><div class="date">10/7 수</div><h3>톱카프 핵심 + 귀국</h3></div><span class="city-badge">ISTANBUL</span></div>
+    <div class="timeline">
+      <div class="row"><div class="time">09:00</div><div class="what"><b>Topkapı Palace</b> 핵심 관람<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Topkapi+Palace+Istanbul" target="_blank">⭐ 리뷰</a></div></div></div>
+      <div class="row"><div class="time">11:30</div><div class="what">관람 종료 → 숙소 짐 회수</div></div>
+      <div class="row"><div class="time">12:30</div><div class="what">IST로 출발 목표</div></div>
+      <div class="row"><div class="time">17:55</div><div class="what">OZ552 출국 → 10/8 09:45 ICN</div></div>
+    </div>
+  </article>
+</main>
+
+<section class="section" id="hotels">
+  <div class="section-title"><h2>숙소 바로가기</h2><small>리뷰/위치</small></div>
+  <div class="hotel"><div><b>이스탄불 · 첫 Airbnb</b><small>Küçük Ayasofya</small></div><a href="https://www.google.com/maps/search/?api=1&query=Kucuk+Ayasofya+Mahallesi+Sehit+Mehmet+Pasa+Sokak+No+21+Fatih+Istanbul" target="_blank">지도</a></div>
+  <div class="hotel"><div><b>Elegance Cave Suites</b><small>Göreme · 9/28–10/2</small></div><a href="https://www.google.com/maps/search/?api=1&query=Elegance+Cave+Suites+Goreme" target="_blank">리뷰</a></div>
+  <div class="hotel"><div><b>House of Good Things</b><small>Kaleiçi · 10/2–10/5</small></div><a href="https://www.google.com/maps/search/?api=1&query=House+of+Good+Things+Antalya" target="_blank">리뷰</a></div>
+  <div class="hotel"><div><b>Hotel Goreme Sakura</b><small>Pamukkale · 10/5–10/6</small></div><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Goreme+Sakura+Pamukkale" target="_blank">리뷰</a></div>
+  <div class="hotel"><div><b>이스탄불 · 마지막 Airbnb</b><small>Emin Sinan · Tülcü Sokak No:23</small></div><a href="https://www.google.com/maps/search/?api=1&query=Emin+Sinan+Tulcu+Sokak+No+23+Fatih+Istanbul" target="_blank">지도</a></div>
+</section>
+
+<section class="section" id="checklist">
+  <div class="section-title"><h2>출발 전 / 현장 체크</h2><small>자동 저장</small></div>
+  <div class="checks" id="checks">
+    <div class="check"><input id="c1" type="checkbox"><label for="c1">9/28·10/2 카파도키아 공항셔틀 중 포함된 1회가 어느 편인지 확정</label></div>
+    <div class="check"><input id="c2" type="checkbox"><label for="c2">9/28 로즈밸리 날짜·집결지·시간 바우처 확인</label></div>
+    <div class="check"><input id="c3" type="checkbox"><label for="c3">9/29 그린투어 실제 픽업시간 확인</label></div>
+    <div class="check"><input id="c4" type="checkbox"><label for="c4">렌터카 10/1 22시 대면 반납 가능 여부·연료정책 확인</label></div>
+    <div class="check"><input id="c5" type="checkbox"><label for="c5">10/3 술루아다 예약 확정 + 칼레이치 픽업 핀 저장</label></div>
+    <div class="check"><input id="c6" type="checkbox"><label for="c6">10/5 버스 승강장/회사 최종 확인</label></div>
+    <div class="check"><input id="c7" type="checkbox"><label for="c7">10/6 새벽 Pamukkale → DNZ 픽업 확정</label></div>
+    <div class="check"><input id="c8" type="checkbox"><label for="c8">10/7 마지막 Airbnb 체크아웃 후 짐 보관 확인</label></div>
+  </div>
+</section>
+
+<div class="footer">일정 기준: 업로드한 2026.09.22 여행 가이드. 현지에서 바뀌는 운영시간·픽업·날씨는 예약 바우처와 당일 안내가 우선이야.<br>이 파일 하나만 저장해두면 일정·체크리스트는 오프라인에서도 열리고, 지도/리뷰 링크만 인터넷이 필요해.</div>
+</div>
+
+<div class="bottom-nav">
+  <button onclick="goToday()"><strong>📍</strong>오늘</button>
+  <button onclick="document.getElementById('antalya-guide').scrollIntoView()"><strong>🌊</strong>안탈리아</button>
+  <button onclick="openSheet('mapSheet')"><strong>🗺️</strong>지도</button>
+  <button onclick="document.getElementById('checklist').scrollIntoView()"><strong>✅</strong>체크</button>
+</div>
+
+<div class="sheet" id="mapSheet" onclick="if(event.target===this)closeSheet('mapSheet')">
+  <div class="sheet-card">
+    <button class="close" onclick="closeSheet('mapSheet')">×</button>
+    <h2>안탈리아 장소 모아보기</h2>
+    <div class="map-list">
+      <a href="https://www.google.com/maps/search/?api=1&query=House+of+Good+Things+Antalya" target="_blank"><span>🏨 House of Good Things</span><span>열기 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Mermerli+Beach+Antalya" target="_blank"><span>🏖️ Mermerli Beach</span><span>리뷰 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Hadrians+Gate+Antalya" target="_blank"><span>🏛️ Hadrian's Gate</span><span>리뷰 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Old+City+Marina+Antalya" target="_blank"><span>⛵ Old City Marina</span><span>리뷰 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Hidirlik+Tower+Antalya" target="_blank"><span>🧱 Hıdırlık Tower</span><span>리뷰 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Karaalioglu+Park+Antalya" target="_blank"><span>🌅 Karaalioğlu Park</span><span>리뷰 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Adrasan+Harbour+Antalya" target="_blank"><span>🚤 Adrasan Harbour</span><span>리뷰 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Suluada+Turkey" target="_blank"><span>🏝️ Suluada</span><span>보기 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Lower+Duden+Waterfalls+Antalya" target="_blank"><span>💦 Lower Düden</span><span>리뷰 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Piyazci+Ahmet+Antalya" target="_blank"><span>🍽️ Piyazcı Ahmet</span><span>리뷰 ↗</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Konyaalti+Beach+Antalya" target="_blank"><span>🌊 Konyaaltı Beach</span><span>리뷰 ↗</span></a>
+    </div>
+  </div>
+</div>
+
+<script>
+const tripDays={
+  '2026-09-26':'d0926','2026-09-27':'d0927','2026-09-28':'d0928','2026-09-29':'d0929','2026-09-30':'d0930','2026-10-01':'d1001','2026-10-02':'d1002','2026-10-03':'d1003','2026-10-04':'d1004','2026-10-05':'d1005','2026-10-06':'d1006','2026-10-07':'d1007'};
+function turkeyDate(){
+  const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Istanbul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const o={};parts.forEach(p=>o[p.type]=p.value);return `${o.year}-${o.month}-${o.day}`;
+}
+function goToday(){
+  const key=turkeyDate(), id=tripDays[key];
+  if(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});}else{document.getElementById('schedule').scrollIntoView({behavior:'smooth'});}
+}
+function renderToday(){
+  const key=turkeyDate(), card=document.getElementById('todayCard'), id=tripDays[key];
+  if(!id)return;
+  const el=document.getElementById(id), title=el.querySelector('h3').textContent, city=el.querySelector('.city-badge').textContent;
+  card.innerHTML=`<div class="mini">오늘 · 튀르키예 현지 날짜 기준</div><h2>${title}</h2><p>${city} 일정이야. 아래 버튼 누르면 오늘 카드로 바로 내려가.</p><div class="today-buttons"><a href="#${id}">오늘 일정</a><a href="#checklist">체크리스트</a></div>`;
+}
+function openSheet(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden'}
+function closeSheet(id){document.getElementById(id).classList.remove('open');document.body.style.overflow=''}
+document.querySelectorAll('#tabs button').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
+  const f=btn.dataset.filter;document.querySelectorAll('.day').forEach(day=>day.classList.toggle('hidden',f!=='all'&&day.dataset.city!==f));
+  document.querySelectorAll('.city-section').forEach(sec=>sec.classList.toggle('hidden',f!=='all'&&sec.dataset.city!==f));
+}));
+document.querySelectorAll('#checks input').forEach(cb=>{const k='turkiye-'+cb.id;cb.checked=localStorage.getItem(k)==='1';cb.addEventListener('change',()=>localStorage.setItem(k,cb.checked?'1':'0'))});
+renderToday();
+</script>
+</body>
+</html>
