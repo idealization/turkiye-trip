@@ -58,6 +58,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
 .today-card{background:linear-gradient(145deg,#3d7173,#294f55);border:0;border-radius:25px;box-shadow:0 14px 32px rgba(43,87,89,.18)}.today-card:before{content:"";position:absolute;width:88px;height:112px;right:22px;top:-54px;border:1px solid rgba(255,255,255,.16);border-radius:50% 50% 46% 46%;transform:rotate(8deg)}.today-card:after{background:radial-gradient(circle,rgba(255,255,255,.16) 0 1px,transparent 1.5px);background-size:15px 15px;opacity:.16}.today-preview-item{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.08)}
 .day{border:1px solid var(--line);border-radius:22px;background:var(--card);box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}.day-head{padding-top:17px}.date{color:var(--coral);font-weight:700}.day h3{font-weight:700}.city-badge{background:#edf2ef;color:#547172;font-weight:700;letter-spacing:.03em}.row{grid-template-columns:72px 1fr}.time{color:#4e7879;font-weight:700}.what b{font-weight:700}
 .day.is-today{border:1px solid #5f9190;box-shadow:0 16px 38px rgba(58,108,109,.16);transform:translateY(-2px)}.day.is-today .day-head{background:linear-gradient(90deg,#eef5f2,transparent)}.day.is-today .date:after{background:#c97969;border:0}
+.weather-strip{display:flex;align-items:center;gap:10px;margin:0 16px 10px;padding:10px 12px;border-radius:14px;background:#f3f6f4;color:#536568;font-size:12px;line-height:1.45}.weather-icon{font-size:25px;line-height:1}.weather-main{min-width:0;flex:1}.weather-main b{display:block;color:#314d50;font-size:13px}.weather-style{color:#7b6960}.weather-source{flex:0 0 auto;color:#829092;text-decoration:none;font-size:10px}.weather-strip.pending{background:#f7f4ee;color:#8a8177}.weather-strip.error{background:#f7f4ee;color:#8a8177}
 .mapbtn,.routebtn,.softbtn{border-radius:999px}.mapbtn{background:#edf4f1}.routebtn{background:#faeee9}.tip{border-radius:14px;background:#f6f2eb}.tip.warn{background:#fbefe7}.tip.ok{background:#edf5ef}
 .antalya-feature{background:linear-gradient(145deg,#edf5f2,#fffdfa 55%,#f8eee6);border:1px solid #dce6e1;border-radius:24px;box-shadow:var(--shadow)}.chips span{background:rgba(255,255,255,.8);border-color:#dfe7e3}
 .info,.check,.hotel{background:#fffdfa;border:1px solid var(--line);box-shadow:0 5px 18px rgba(50,58,56,.045)}.check input{accent-color:#4e7f7e}.hotel a{background:#446f71}.bottom-nav{background:rgba(35,52,56,.94);border:1px solid rgba(255,255,255,.12);box-shadow:0 14px 34px rgba(26,36,38,.24)}.bottom-nav button{color:#edf3f1}.sheet-card{background:#f7f3ed}.map-list a{background:#fffdfa;border-color:var(--line)}.footer{color:#7b8281}
@@ -197,17 +198,11 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <details class="details"><summary>플랜 B · 10/3 술루아다 취소 시</summary><p>10/4로 술루아다 변경이 실제로 가능할 때만 바꾸고, 폭포·피야즈·콘얄트는 과감히 포기. 좌석 없거나 날씨가 계속 안 좋으면 이 도시 일정 그대로 진행해. Antalya Archaeology Museum은 현재 임시 휴관 표시라 우천 대체로 넣지 않았어.</p></details>
   </article>
 
-  <article class="day" data-city="antalya" data-date="2026-10-05" id="d1005">
-    <div class="day-head"><div><div class="date">10/5 월</div><h3>안탈리아 → 데니즐리</h3></div><span class="city-badge">ANTALYA → PAM</span></div>
+  <article class="day" data-city="antalya pamukkale" data-date="2026-10-05" id="d1005">
+    <div class="day-head"><div><div class="date">10/5 월</div><h3>안탈리아 → 파묵칼레</h3></div><span class="city-badge">ANTALYA → PAM</span></div>
     <div class="timeline">
       <div class="row"><div class="time">08:00</div><div class="what"><b>Antalya Otogarı 도착 목표</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Antalya+Otogar" target="_blank">터미널</a></div></div></div>
       <div class="row"><div class="time">08:30</div><div class="what">데니즐리행 버스 → 11:45 예정</div></div>
-    </div>
-  </article>
-
-  <article class="day" data-city="pamukkale" data-date="2026-10-05" id="d1005pam">
-    <div class="day-head"><div><div class="date">10/5 월 · 오후</div><h3>파묵칼레 + 히에라폴리스</h3></div><span class="city-badge">PAMUKKALE</span></div>
-    <div class="timeline">
       <div class="row"><div class="time">14:00쯤</div><div class="what"><b>Hierapolis</b> → 석회붕<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Hierapolis+Pamukkale" target="_blank">히에라폴리스</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Pamukkale+Travertines" target="_blank">석회붕</a></div></div></div>
       <div class="row"><div class="time">저녁</div><div class="what"><b>Hotel Goreme Sakura</b> · 다음날 공항차 재확인<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Hotel+Goreme+Sakura+Pamukkale" target="_blank">🏠 호텔 리뷰</a></div></div></div>
     </div>
@@ -256,7 +251,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
   </div>
 </section>
 
-<div class="footer">일정 기준: 업로드한 2026.09.22 여행 가이드. 현지에서 바뀌는 운영시간·픽업·날씨는 예약 바우처와 당일 안내가 우선이야.<br>이 파일 하나만 저장해두면 일정·체크리스트는 오프라인에서도 열리고, 지도/리뷰 링크만 인터넷이 필요해.</div>
+<div class="footer">일정 기준: 업로드한 2026.09.22 여행 가이드. 현지에서 바뀌는 운영시간·픽업·날씨는 예약 바우처와 당일 안내가 우선이야.<br>일정·체크리스트는 오프라인에서도 열리고, 지도/리뷰와 최신 날씨 갱신에는 인터넷이 필요해.</div>
 </div>
 
 <div class="bottom-nav">
@@ -288,8 +283,12 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
 
 <script>
 const tripDays={
-  '2026-09-26':['d0926'],'2026-09-27':['d0927'],'2026-09-28':['d0928'],'2026-09-29':['d0929'],'2026-09-30':['d0930'],'2026-10-01':['d1001'],'2026-10-02':['d1002'],'2026-10-03':['d1003'],'2026-10-04':['d1004'],'2026-10-05':['d1005','d1005pam'],'2026-10-06':['d1006'],'2026-10-07':['d1007']};
+  '2026-09-26':['d0926'],'2026-09-27':['d0927'],'2026-09-28':['d0928'],'2026-09-29':['d0929'],'2026-09-30':['d0930'],'2026-10-01':['d1001'],'2026-10-02':['d1002'],'2026-10-03':['d1003'],'2026-10-04':['d1004'],'2026-10-05':['d1005'],'2026-10-06':['d1006'],'2026-10-07':['d1007']};
 const tripDates=Object.keys(tripDays), firstTripDate=tripDates[0], lastTripDate=tripDates[tripDates.length-1];
+const weatherPlaces={
+  istanbul:{name:'이스탄불',lat:41.0082,lon:28.9784},cappadocia:{name:'카파도키아',lat:38.6431,lon:34.8289},antalya:{name:'안탈리아',lat:36.8969,lon:30.7133},pamukkale:{name:'파묵칼레',lat:37.9137,lon:29.1187}
+};
+const weatherPlaceByDate={'2026-09-26':'istanbul','2026-09-27':'istanbul','2026-09-28':'cappadocia','2026-09-29':'cappadocia','2026-09-30':'cappadocia','2026-10-01':'cappadocia','2026-10-02':'antalya','2026-10-03':'antalya','2026-10-04':'antalya','2026-10-05':'pamukkale','2026-10-06':'istanbul','2026-10-07':'istanbul'};
 function turkeyDate(){
   const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Istanbul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
   const o={};parts.forEach(p=>o[p.type]=p.value);return `${o.year}-${o.month}-${o.day}`;
@@ -325,15 +324,40 @@ function renderToday(){
   }).join('');
   card.innerHTML=`<div class="mini">TODAY · 튀르키예 현지 날짜 기준</div><h2>${titles}</h2><p>${cities} · 오늘 필요한 일정만 위에 모아뒀어.</p><div class="today-preview">${preview}</div><div class="today-buttons"><a href="#${ids[0]}">상세 일정</a><a href="#checklist">체크리스트</a></div>`;
 }
+function weatherInfo(code){
+  if(code===0)return ['☀️','맑음'];if(code<=2)return ['🌤️','대체로 맑음'];if(code===3)return ['☁️','흐림'];if(code===45||code===48)return ['🌫️','안개'];if(code>=51&&code<=67)return ['🌧️','비'];if(code>=71&&code<=77)return ['🌨️','눈'];if(code>=80&&code<=82)return ['🌦️','소나기'];if(code>=85&&code<=86)return ['🌨️','눈 소나기'];if(code>=95)return ['⛈️','뇌우'];return ['🌤️','날씨'];
+}
+function stylingTip(min,max,rain,placeKey){
+  let tip=min<8?'도톰한 외투와 레이어드':min<13?'가벼운 재킷·가디건':max>=27?'반소매 + 햇빛 가릴 얇은 셔츠':'긴팔 또는 얇은 겉옷';
+  if(placeKey==='cappadocia')tip+=' · 새벽엔 한 겹 더';if(rain>=40)tip+=' · 우산 챙기기';return tip;
+}
+function setWeather(card,data,placeKey){
+  const place=weatherPlaces[placeKey],date=card.dataset.date,idx=data?.daily?.time?.indexOf(date)??-1;
+  let strip=card.querySelector('.weather-strip');if(!strip){strip=document.createElement('div');card.querySelector('.day-head').after(strip);}
+  if(idx<0){strip.className='weather-strip pending';strip.innerHTML=`<span class="weather-icon">○</span><div class="weather-main"><b>${place.name} · 예보 준비 중</b><span>예보 범위에 들어오면 자동으로 표시돼.</span></div>`;return;}
+  const code=data.daily.weather_code[idx],max=Math.round(data.daily.temperature_2m_max[idx]),min=Math.round(data.daily.temperature_2m_min[idx]),rain=data.daily.precipitation_probability_max[idx]??0,[icon,label]=weatherInfo(code);
+  strip.className='weather-strip';strip.innerHTML=`<span class="weather-icon">${icon}</span><div class="weather-main"><b>${place.name} · ${label} · ${min}° / ${max}°</b><span>강수 ${rain}% · </span><span class="weather-style">${stylingTip(min,max,rain,placeKey)}</span></div><a class="weather-source" href="https://open-meteo.com/" target="_blank">예보 ↗</a>`;
+}
+async function renderWeather(){
+  const cards=[...document.querySelectorAll('.day[data-date]')];
+  cards.forEach(card=>setWeather(card,null,weatherPlaceByDate[card.dataset.date]));
+  await Promise.all(Object.entries(weatherPlaces).map(async([key,place])=>{
+    const cacheKey='turkiye-weather-'+key;let data=null;
+    try{const cached=JSON.parse(localStorage.getItem(cacheKey));if(cached&&Date.now()-cached.savedAt<10800000)data=cached.data;}catch(e){}
+    try{if(!data){const url=`https://api.open-meteo.com/v1/forecast?latitude=${place.lat}&longitude=${place.lon}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Europe%2FIstanbul&forecast_days=16`;const response=await fetch(url);if(!response.ok)throw new Error('weather');data=await response.json();localStorage.setItem(cacheKey,JSON.stringify({savedAt:Date.now(),data}));}}catch(e){try{data=JSON.parse(localStorage.getItem(cacheKey))?.data}catch(ignore){}}
+    cards.filter(card=>weatherPlaceByDate[card.dataset.date]===key).forEach(card=>setWeather(card,data,key));
+  }));
+}
 function openSheet(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden'}
 function closeSheet(id){document.getElementById(id).classList.remove('open');document.body.style.overflow=''}
 document.querySelectorAll('#tabs button').forEach(btn=>btn.addEventListener('click',()=>{
   document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
-  const f=btn.dataset.filter;document.querySelectorAll('.day').forEach(day=>day.classList.toggle('hidden',f!=='all'&&day.dataset.city!==f));
+  const f=btn.dataset.filter;document.querySelectorAll('.day').forEach(day=>day.classList.toggle('hidden',f!=='all'&&!day.dataset.city.split(' ').includes(f)));
   document.querySelectorAll('.city-section').forEach(sec=>sec.classList.toggle('hidden',f!=='all'&&sec.dataset.city!==f));
 }));
 document.querySelectorAll('#checks input').forEach(cb=>{const k='turkiye-'+cb.id;cb.checked=localStorage.getItem(k)==='1';cb.addEventListener('change',()=>localStorage.setItem(k,cb.checked?'1':'0'))});
 renderToday();
+renderWeather();
 </script>
 </body>
 </html>
