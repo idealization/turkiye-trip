@@ -28,8 +28,9 @@ h1{font-size:34px;line-height:1.14;margin:9px 0 10px;letter-spacing:-.04em}
 .notice{margin:0 16px 14px;background:#fff8e8;border:1px solid #f0d7a7;border-radius:16px;padding:13px 15px;color:#694c1f;font-size:13px;line-height:1.6}
 .tabs{position:sticky;top:0;z-index:20;display:flex;gap:8px;overflow:auto;padding:10px 12px;background:rgba(244,241,234,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,40,44,.07);scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs button{border:1px solid #d8ddd7;background:#fff;border-radius:999px;padding:9px 13px;white-space:nowrap;color:#456266;font-weight:700}.tabs button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 .section{padding:14px 16px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:12px 2px 10px}.section-title h2{margin:0;font-size:22px;letter-spacing:-.03em}.section-title small{color:var(--muted)}
-.today-card{background:linear-gradient(135deg,var(--sea),#17454b);color:white;border-radius:24px;padding:18px;box-shadow:var(--shadow);margin:0 0 14px}.today-card .mini{font-size:12px;opacity:.8}.today-card h2{margin:5px 0 8px;font-size:24px}.today-card p{margin:0;line-height:1.65;color:#eaf6f4}.today-card .today-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.today-card a{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:12px;padding:9px 11px;text-decoration:none;font-size:13px;font-weight:800}
+.today-card{background:linear-gradient(135deg,var(--sea),#17454b);color:white;border-radius:24px;padding:18px;box-shadow:0 16px 36px rgba(13,93,98,.2);margin:0 0 14px;position:relative;overflow:hidden}.today-card:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-54px;top:-70px;background:rgba(255,255,255,.08)}.today-card .mini{font-size:12px;opacity:.82;font-weight:800;letter-spacing:.03em}.today-card h2{margin:5px 0 8px;font-size:24px}.today-card p{margin:0;line-height:1.65;color:#eaf6f4}.today-card .today-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.today-card a{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:12px;padding:9px 11px;text-decoration:none;font-size:13px;font-weight:800}.today-preview{display:grid;gap:7px;margin-top:14px}.today-preview-item{display:grid;grid-template-columns:64px 1fr;gap:9px;padding:9px 10px;border-radius:12px;background:rgba(255,255,255,.1);font-size:12px;line-height:1.45}.today-preview-item b{color:#ffd99f}.today-preview-item span{color:#f4fbfa}
 .day{background:var(--card);border:1px solid #e5e7e1;border-radius:22px;margin:12px 0;box-shadow:0 6px 18px rgba(20,40,44,.045);overflow:hidden}.day-head{padding:16px 16px 12px;display:flex;justify-content:space-between;gap:12px}.date{font-size:12px;font-weight:900;color:var(--sea);letter-spacing:.06em}.day h3{font-size:20px;letter-spacing:-.025em;margin:4px 0 0}.city-badge{align-self:flex-start;background:var(--sky);color:var(--sea);font-size:11px;font-weight:900;padding:7px 9px;border-radius:999px}.timeline{padding:0 16px 8px}.row{display:grid;grid-template-columns:68px 1fr;gap:10px;padding:11px 0;border-top:1px solid var(--line)}.row:first-child{border-top:0}.time{font-size:13px;color:var(--sea);font-weight:900}.what{font-size:15px;line-height:1.55}.what b{font-weight:900}.sub{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.5}
+.day.is-today{border:2px solid var(--sea2);box-shadow:0 14px 32px rgba(13,93,98,.16);transform:translateY(-2px)}.day.is-today .day-head{background:linear-gradient(90deg,#e4f4ef,rgba(255,253,248,0))}.day.is-today .date:after{content:"TODAY";display:inline-block;margin-left:7px;padding:3px 6px;border-radius:999px;background:var(--coral);color:#fff;font-size:9px;letter-spacing:.08em;vertical-align:1px}
 .place-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}.mapbtn,.routebtn,.softbtn{display:inline-flex;align-items:center;gap:5px;border-radius:11px;text-decoration:none;font-size:12px;font-weight:900;padding:8px 10px}.mapbtn{background:#edf7f5;color:var(--sea)}.routebtn{background:#fff1ec;color:#9b4b38}.softbtn{background:#f3f3ef;color:#566467}
 .tip{margin:0 16px 15px;padding:12px 13px;border-radius:14px;background:#f7f4ed;color:#4e5f62;font-size:13px;line-height:1.6}.tip strong{color:#3c4e51}.tip.warn{background:#fff2e7;color:#7a451e}.tip.ok{background:#edf7f0;color:#356348}
 .details{border-top:1px solid var(--line);padding:0 16px 14px}.details summary{cursor:pointer;color:var(--sea);font-weight:900;padding:13px 0 3px}.details p,.details li{font-size:13px;color:#53676a;line-height:1.7}.details ul{padding-left:20px}
@@ -265,20 +266,42 @@ h1{font-size:34px;line-height:1.14;margin:9px 0 10px;letter-spacing:-.04em}
 
 <script>
 const tripDays={
-  '2026-09-26':'d0926','2026-09-27':'d0927','2026-09-28':'d0928','2026-09-29':'d0929','2026-09-30':'d0930','2026-10-01':'d1001','2026-10-02':'d1002','2026-10-03':'d1003','2026-10-04':'d1004','2026-10-05':'d1005','2026-10-06':'d1006','2026-10-07':'d1007'};
+  '2026-09-26':['d0926'],'2026-09-27':['d0927'],'2026-09-28':['d0928'],'2026-09-29':['d0929'],'2026-09-30':['d0930'],'2026-10-01':['d1001'],'2026-10-02':['d1002'],'2026-10-03':['d1003'],'2026-10-04':['d1004'],'2026-10-05':['d1005','d1005pam'],'2026-10-06':['d1006'],'2026-10-07':['d1007']};
+const tripDates=Object.keys(tripDays), firstTripDate=tripDates[0], lastTripDate=tripDates[tripDates.length-1];
 function turkeyDate(){
   const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Istanbul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
   const o={};parts.forEach(p=>o[p.type]=p.value);return `${o.year}-${o.month}-${o.day}`;
 }
 function goToday(){
-  const key=turkeyDate(), id=tripDays[key];
-  if(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});}else{document.getElementById('schedule').scrollIntoView({behavior:'smooth'});}
+  const key=turkeyDate(), ids=tripDays[key];
+  if(ids){document.getElementById(ids[0]).scrollIntoView({behavior:'smooth',block:'center'});}
+  else if(key<firstTripDate){document.getElementById(tripDays[firstTripDate][0]).scrollIntoView({behavior:'smooth',block:'center'});}
+  else{document.getElementById(tripDays[lastTripDate][0]).scrollIntoView({behavior:'smooth',block:'center'});}
 }
 function renderToday(){
-  const key=turkeyDate(), card=document.getElementById('todayCard'), id=tripDays[key];
-  if(!id)return;
-  const el=document.getElementById(id), title=el.querySelector('h3').textContent, city=el.querySelector('.city-badge').textContent;
-  card.innerHTML=`<div class="mini">오늘 · 튀르키예 현지 날짜 기준</div><h2>${title}</h2><p>${city} 일정이야. 아래 버튼 누르면 오늘 카드로 바로 내려가.</p><div class="today-buttons"><a href="#${id}">오늘 일정</a><a href="#checklist">체크리스트</a></div>`;
+  const key=turkeyDate(), card=document.getElementById('todayCard'), ids=tripDays[key];
+  document.querySelectorAll('.day').forEach(day=>day.classList.toggle('is-today',day.dataset.date===key));
+  if(key<firstTripDate){
+    const days=Math.ceil((Date.parse(firstTripDate+'T00:00:00Z')-Date.parse(key+'T00:00:00Z'))/86400000);
+    card.innerHTML=`<div class="mini">튀르키예 현지 날짜 기준 · D-${days}</div><h2>여행까지 ${days}일 남았어</h2><p>9월 26일 이스탄불에서 시작! 출발 전 예약과 체크리스트를 한 번씩 확인해.</p><div class="today-buttons"><a href="#d0926">첫날 일정 미리보기</a><a href="#checklist">출발 전 체크</a></div>`;
+    return;
+  }
+  if(key>lastTripDate){
+    card.innerHTML='<div class="mini">여행 일정 완료</div><h2>튀르키예 여행, 잘 다녀왔어!</h2><p>일정과 체크 기록은 이 페이지에 그대로 남아 있어.</p><div class="today-buttons"><a href="#schedule">전체 일정 다시 보기</a></div>';
+    return;
+  }
+  if(!ids)return;
+  const cards=ids.map(id=>document.getElementById(id));
+  const titles=cards.map(el=>el.querySelector('h3').textContent).join(' · ');
+  const cities=[...new Set(cards.map(el=>el.querySelector('.city-badge').textContent))].join(' → ');
+  const rows=cards.flatMap(el=>[...el.querySelectorAll('.row')]).slice(0,4);
+  const preview=rows.map(row=>{
+    const time=row.querySelector('.time').textContent.trim();
+    const what=row.querySelector('.what').cloneNode(true);
+    what.querySelectorAll('.place-actions,.sub').forEach(el=>el.remove());
+    return `<div class="today-preview-item"><b>${time}</b><span>${what.textContent.trim()}</span></div>`;
+  }).join('');
+  card.innerHTML=`<div class="mini">TODAY · 튀르키예 현지 날짜 기준</div><h2>${titles}</h2><p>${cities} · 오늘 필요한 일정만 위에 모아뒀어.</p><div class="today-preview">${preview}</div><div class="today-buttons"><a href="#${ids[0]}">상세 일정</a><a href="#checklist">체크리스트</a></div>`;
 }
 function openSheet(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden'}
 function closeSheet(id){document.getElementById(id).classList.remove('open');document.body.style.overflow=''}
