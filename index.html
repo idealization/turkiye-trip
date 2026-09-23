@@ -38,7 +38,7 @@ h1{font-size:34px;line-height:1.14;margin:9px 0 10px;letter-spacing:-.04em}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.info{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px}.info b{display:block;font-size:13px;margin-bottom:4px}.info span{font-size:12px;color:var(--muted);line-height:1.55}
 .checks{display:grid;gap:8px}.check{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:12px;border-radius:14px}.check input{margin-top:3px;width:18px;height:18px;accent-color:var(--sea)}.check label{font-size:13px;line-height:1.5}
 .hotel{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px;margin:8px 0}.hotel b{display:block;font-size:14px}.hotel small{color:var(--muted);line-height:1.5}.hotel a{flex:0 0 auto;text-decoration:none;color:white;background:var(--sea);padding:9px 10px;border-radius:11px;font-size:12px;font-weight:900}
-.bottom-nav{position:fixed;z-index:30;left:50%;bottom:max(10px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(720px,calc(100% - 24px));display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:7px;background:rgba(19,38,42,.93);backdrop-filter:blur(16px);border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,.22)}.bottom-nav button{border:0;background:transparent;color:#e7eeee;border-radius:14px;padding:8px 4px;font-size:11px;font-weight:800}.bottom-nav button strong{display:block;font-size:18px;line-height:1.1;margin-bottom:3px}
+.bottom-nav{position:fixed;z-index:30;left:50%;bottom:max(10px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(720px,calc(100% - 24px));display:grid;grid-template-columns:repeat(5,1fr);gap:3px;padding:7px;background:rgba(19,38,42,.93);backdrop-filter:blur(16px);border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,.22)}.bottom-nav button{border:0;background:transparent;color:#e7eeee;border-radius:14px;padding:8px 2px;font-size:10px;font-weight:800;white-space:nowrap}.bottom-nav button strong{display:block;font-size:17px;line-height:1.1;margin-bottom:3px}
 .sheet{display:none;position:fixed;z-index:50;inset:0;background:rgba(7,19,21,.42);padding:10vh 12px 12px}.sheet.open{display:flex;align-items:flex-end}.sheet-card{width:min(720px,100%);margin:auto;background:#fbfaf6;border-radius:24px;max-height:80vh;overflow:auto;padding:18px}.sheet-card h2{margin:0 0 10px}.sheet-card .close{float:right;border:0;background:#eceeea;border-radius:999px;width:34px;height:34px;font-size:18px}.map-list{display:grid;gap:9px}.map-list a{display:flex;justify-content:space-between;gap:10px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:13px;padding:11px 12px;font-size:13px}.map-list a span:last-child{color:var(--sea);font-weight:900}
 .hidden{display:none!important}.footer{padding:26px 18px 16px;color:#728184;font-size:12px;line-height:1.7;text-align:center}
 
@@ -255,10 +255,11 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
 </div>
 
 <div class="bottom-nav">
-  <button onclick="goToday()"><strong>📍</strong>오늘</button>
-  <button onclick="document.getElementById('antalya-guide').scrollIntoView()"><strong>🌊</strong>안탈리아</button>
-  <button onclick="openSheet('mapSheet')"><strong>🗺️</strong>지도</button>
-  <button onclick="document.getElementById('checklist').scrollIntoView()"><strong>✅</strong>체크</button>
+  <button onclick="goToday()" aria-label="오늘 일정으로 이동"><strong>📍</strong>오늘</button>
+  <button onclick="jumpToDay('d0926')" aria-label="첫 이스탄불 일정으로 이동"><strong>◐</strong>이스탄불①</button>
+  <button onclick="jumpToDay('d0928')" aria-label="카파도키아 일정으로 이동"><strong>🎈</strong>카파도키아</button>
+  <button onclick="jumpToDay('d1002')" aria-label="안탈리아 일정으로 이동"><strong>🌊</strong>안탈리아</button>
+  <button onclick="jumpToDay('d1006')" aria-label="마지막 이스탄불 일정으로 이동"><strong>◑</strong>이스탄불②</button>
 </div>
 
 <div class="sheet" id="mapSheet" onclick="if(event.target===this)closeSheet('mapSheet')">
@@ -295,9 +296,18 @@ function turkeyDate(){
 }
 function goToday(){
   const key=turkeyDate(), ids=tripDays[key];
+  showAllDays();
   if(ids){document.getElementById(ids[0]).scrollIntoView({behavior:'smooth',block:'center'});}
   else if(key<firstTripDate){document.getElementById(tripDays[firstTripDate][0]).scrollIntoView({behavior:'smooth',block:'center'});}
   else{document.getElementById(tripDays[lastTripDate][0]).scrollIntoView({behavior:'smooth',block:'center'});}
+}
+function showAllDays(){
+  document.querySelectorAll('#tabs button').forEach(btn=>btn.classList.toggle('active',btn.dataset.filter==='all'));
+  document.querySelectorAll('.day,.city-section').forEach(el=>el.classList.remove('hidden'));
+}
+function jumpToDay(id){
+  showAllDays();
+  document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
 }
 function renderToday(){
   const key=turkeyDate(), card=document.getElementById('todayCard'), ids=tripDays[key];
