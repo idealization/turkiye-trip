@@ -6,6 +6,7 @@
 <meta name="theme-color" content="#0d5d62" />
 <title>튀르키예 여행 컴패니언 · 2026</title>
 <style>
+@font-face{font-family:"Pretendard Variable";font-style:normal;font-weight:45 920;font-display:swap;src:url("assets/fonts/PretendardVariable.woff2") format("woff2-variations")}
 :root{
   --bg:#f4f1ea; --card:#fffdf8; --ink:#14282c; --muted:#66777a;
   --sea:#0d5d62; --sea2:#2e7d7b; --sky:#dceeea; --sun:#f2b66d;
@@ -34,7 +35,6 @@ h1{font-size:34px;line-height:1.14;margin:9px 0 10px;letter-spacing:-.04em}
 .place-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}.mapbtn,.routebtn,.softbtn{display:inline-flex;align-items:center;gap:5px;border-radius:11px;text-decoration:none;font-size:12px;font-weight:900;padding:8px 10px}.mapbtn{background:#edf7f5;color:var(--sea)}.routebtn{background:#fff1ec;color:#9b4b38}.softbtn{background:#f3f3ef;color:#566467}
 .tip{margin:0 16px 15px;padding:12px 13px;border-radius:14px;background:#f7f4ed;color:#4e5f62;font-size:13px;line-height:1.6}.tip strong{color:#3c4e51}.tip.warn{background:#fff2e7;color:#7a451e}.tip.ok{background:#edf7f0;color:#356348}
 .details{border-top:1px solid var(--line);padding:0 16px 14px}.details summary{cursor:pointer;color:var(--sea);font-weight:900;padding:13px 0 3px}.details p,.details li{font-size:13px;color:#53676a;line-height:1.7}.details ul{padding-left:20px}
-.antalya-feature{background:linear-gradient(160deg,#edf8f5,#fffdf8 48%,#fff1e7);border:1px solid #d7e7e3;border-radius:24px;padding:17px;margin:12px 0}.antalya-feature h3{margin:0 0 7px;font-size:21px}.antalya-feature p{margin:0;color:#557074;line-height:1.65;font-size:14px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.chips span{font-size:11px;font-weight:800;padding:6px 9px;border-radius:999px;background:#fff;border:1px solid #dde8e4}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.info{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px}.info b{display:block;font-size:13px;margin-bottom:4px}.info span{font-size:12px;color:var(--muted);line-height:1.55}
 .checks{display:grid;gap:8px}.check{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:12px;border-radius:14px}.check input{margin-top:3px;width:18px;height:18px;accent-color:var(--sea)}.check label{font-size:13px;line-height:1.5}
 .hotel{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px;margin:8px 0}.hotel b{display:block;font-size:14px}.hotel small{color:var(--muted);line-height:1.5}.hotel a{flex:0 0 auto;text-decoration:none;color:white;background:var(--sea);padding:9px 10px;border-radius:11px;font-size:12px;font-weight:900}
@@ -44,7 +44,7 @@ h1{font-size:34px;line-height:1.14;margin:9px 0 10px;letter-spacing:-.04em}
 
 /* Cappadocia dawn: restrained travel editorial */
 :root{--bg:#f4f0e9;--card:#fffdfa;--ink:#253237;--muted:#748083;--sea:#386f72;--sea2:#6b9997;--sky:#dfeae7;--sun:#d7a36b;--coral:#c97969;--line:#e6dfd5;--ok:#4d7862;--warn:#a3633f;--shadow:0 12px 32px rgba(48,59,59,.08)}
-body{background:#f4f0e9;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Helvetica Neue",Arial,sans-serif;font-weight:400;letter-spacing:-.012em}
+body{background:#f4f0e9;color:var(--ink);font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-weight:400;letter-spacing:-.012em}
 .shell{background:linear-gradient(180deg,#ece5dc 0,#f4f0e9 620px)}
 .hero{margin:12px 12px 8px;min-height:280px;padding:28px 22px 24px;border-radius:30px;background-image:linear-gradient(180deg,rgba(22,35,39,.05) 12%,rgba(19,30,33,.82) 100%),url('assets/cappadocia-balloons-hero.jpg');background-size:cover;background-position:62% center;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 18px 42px rgba(42,47,45,.18)}
 .hero:after{display:none}.kicker{color:#fff;font-size:11px;font-weight:650;letter-spacing:.15em;text-shadow:0 1px 8px rgba(0,0,0,.28)}
@@ -60,7 +60,6 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
 .day.is-today{border:1px solid #5f9190;box-shadow:0 16px 38px rgba(58,108,109,.16);transform:translateY(-2px)}.day.is-today .day-head{background:linear-gradient(90deg,#eef5f2,transparent)}.day.is-today .date:after{background:#c97969;border:0}
 .weather-strip{display:flex;align-items:center;gap:10px;margin:0 16px 10px;padding:10px 12px;border-radius:14px;background:#f3f6f4;color:#536568;font-size:12px;line-height:1.45}.weather-icon{font-size:25px;line-height:1}.weather-main{min-width:0;flex:1}.weather-main b{display:block;color:#314d50;font-size:13px}.weather-style{color:#7b6960}.weather-source{flex:0 0 auto;color:#829092;text-decoration:none;font-size:10px}.weather-strip.pending{background:#f7f4ee;color:#8a8177}.weather-strip.error{background:#f7f4ee;color:#8a8177}
 .mapbtn,.routebtn,.softbtn{border-radius:999px}.mapbtn{background:#edf4f1}.routebtn{background:#faeee9}.tip{border-radius:14px;background:#f6f2eb}.tip.warn{background:#fbefe7}.tip.ok{background:#edf5ef}
-.antalya-feature{background:linear-gradient(145deg,#edf5f2,#fffdfa 55%,#f8eee6);border:1px solid #dce6e1;border-radius:24px;box-shadow:var(--shadow)}.chips span{background:rgba(255,255,255,.8);border-color:#dfe7e3}
 .info,.check,.hotel{background:#fffdfa;border:1px solid var(--line);box-shadow:0 5px 18px rgba(50,58,56,.045)}.check input{accent-color:#4e7f7e}.hotel a{background:#446f71}.bottom-nav{background:rgba(35,52,56,.94);border:1px solid rgba(255,255,255,.12);box-shadow:0 14px 34px rgba(26,36,38,.24)}.bottom-nav button{color:#edf3f1}.sheet-card{background:#f7f3ed}.map-list a{background:#fffdfa;border-color:var(--line)}.footer{color:#7b8281}
 .view-hidden{display:none!important}.view-intro{padding:25px 18px 5px;position:relative}.view-intro .kicker{color:var(--coral);text-shadow:none}.view-intro h1{margin:6px 0 4px;color:var(--ink);font-size:30px;text-shadow:none}.view-intro p{margin:0;color:var(--muted);line-height:1.6}.home-link{position:absolute;right:18px;top:24px;border:1px solid #d8dfdc;border-radius:999px;padding:8px 11px;background:#fffdfa;color:#41696a;font-size:11px;font-weight:800}.check-group-title{margin:13px 2px 2px;font-size:15px;color:#41585a}.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quick-card{background:#fffdfa;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 5px 18px rgba(50,58,56,.045)}.quick-card b{display:block;margin-bottom:5px;font-size:14px}.quick-card span{display:block;color:var(--muted);font-size:12px;line-height:1.55}.quick-card a,.quick-card button{display:inline-block;margin-top:9px;border:0;border-radius:999px;padding:7px 9px;background:#edf4f1;color:#41696a;text-decoration:none;font-size:11px;font-weight:800}.weather-control{margin:10px 0 14px;padding:14px;border-radius:18px;background:linear-gradient(135deg,#3d7173,#294f55);color:#fff}.weather-control b{display:block;margin-bottom:4px}.weather-control span{display:block;color:rgba(255,255,255,.76);font-size:12px}.weather-control button{margin-top:10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 11px;background:rgba(255,255,255,.12);color:#fff;font-weight:800}.home-weather{margin-top:10px}.home-weather:empty{display:none}.phrase-section{margin-top:18px}.phrase-section h3{margin:0 2px 9px;font-size:16px}.phrase-grid{display:grid;gap:9px}.phrase-card{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;background:#fffdfa;border:1px solid var(--line);border-radius:17px;padding:13px 14px;box-shadow:0 5px 18px rgba(50,58,56,.04)}.phrase-tr{font-size:16px;font-weight:750;color:#345b5e}.phrase-ko{margin-top:3px;color:var(--ink);font-size:13px}.phrase-pron{margin-top:3px;color:var(--muted);font-size:11px}.speak-btn{width:38px;height:38px;border:0;border-radius:50%;background:#edf4f1;color:#41696a;font-size:17px}.language-tip{margin:12px 0;padding:13px 14px;border-radius:15px;background:#f7efe8;color:#765b49;font-size:12px;line-height:1.6}
 @media(hover:hover){.day:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(48,59,59,.11)}.mapbtn:hover,.routebtn:hover,.softbtn:hover{filter:brightness(.97)}}
@@ -86,21 +85,6 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
 <section class="section" id="todaySection" data-view="home">
   <div id="todayCard" class="today-card"><div class="mini">여행 전</div><h2>9월 26일부터 시작!</h2><p>출발 전에는 아래 체크리스트랑 예약 확정사항만 보면 돼.</p></div>
   <div id="todayWeather" class="home-weather"></div>
-</section>
-
-<section class="section city-section" data-phase="antalya" id="antalya-guide" data-view="schedule">
-  <div class="section-title"><h2>🌊 안탈리아 업그레이드</h2><small>10/2–10/5</small></div>
-  <div class="antalya-feature">
-    <h3>“구시가지 + 바다 + 섬투어”로 역할 분담</h3>
-    <p>10/2는 칼레이치·항구·가까운 바다, 10/3은 술루아다 하루 통째로, 10/4는 Lower Düden + 안탈리아식 점심 + 콘얄트 해변으로 잡으면 서로 안 겹치고 딱 좋아.</p>
-    <div class="chips"><span>10/2 사진·산책</span><span>10/3 수영·보트</span><span>10/4 폭포·해변</span><span>10/5 이동</span></div>
-  </div>
-  <div class="grid2">
-    <div class="info"><b>🏨 숙소</b><span>House of Good Things · Kaleiçi</span></div>
-    <div class="info"><b>🚕 이동</b><span>4인이라 시내는 택시 분담이 편함</span></div>
-    <div class="info"><b>👟 노면</b><span>칼레이치 돌길·경사 있음</span></div>
-    <div class="info"><b>🧴 바다날</b><span>선크림·타월·방수팩 필수</span></div>
-  </div>
 </section>
 
 <main class="section" id="schedule" data-view="schedule">
@@ -355,7 +339,7 @@ function goToday(){
 }
 function showAllDays(){
   document.querySelectorAll('#tabs button').forEach(btn=>btn.classList.toggle('active',btn.dataset.filter==='all'));
-  document.querySelectorAll('.day,.city-section').forEach(el=>el.classList.remove('hidden'));
+  document.querySelectorAll('.day').forEach(el=>el.classList.remove('hidden'));
 }
 function jumpToDay(id){
   setView('schedule');
@@ -437,7 +421,6 @@ function closeSheet(id){document.getElementById(id).classList.remove('open');doc
 document.querySelectorAll('#tabs button').forEach(btn=>btn.addEventListener('click',()=>{
   document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
   const f=btn.dataset.filter;document.querySelectorAll('.day').forEach(day=>day.classList.toggle('hidden',f!=='all'&&!day.dataset.phase.split(' ').includes(f)));
-  document.querySelectorAll('.city-section').forEach(sec=>sec.classList.toggle('hidden',f!=='all'&&sec.dataset.phase!==f));
 }));
 document.querySelectorAll('#checks input').forEach(cb=>{const k='turkiye-'+cb.id;cb.checked=localStorage.getItem(k)==='1';cb.addEventListener('change',()=>localStorage.setItem(k,cb.checked?'1':'0'))});
 renderToday();
