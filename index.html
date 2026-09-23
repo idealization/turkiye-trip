@@ -38,7 +38,7 @@ h1{font-size:34px;line-height:1.14;margin:9px 0 10px;letter-spacing:-.04em}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.info{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px}.info b{display:block;font-size:13px;margin-bottom:4px}.info span{font-size:12px;color:var(--muted);line-height:1.55}
 .checks{display:grid;gap:8px}.check{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:12px;border-radius:14px}.check input{margin-top:3px;width:18px;height:18px;accent-color:var(--sea)}.check label{font-size:13px;line-height:1.5}
 .hotel{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px;margin:8px 0}.hotel b{display:block;font-size:14px}.hotel small{color:var(--muted);line-height:1.5}.hotel a{flex:0 0 auto;text-decoration:none;color:white;background:var(--sea);padding:9px 10px;border-radius:11px;font-size:12px;font-weight:900}
-.bottom-nav{position:fixed;z-index:30;left:50%;bottom:max(10px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(720px,calc(100% - 24px));display:grid;grid-template-columns:repeat(5,1fr);gap:3px;padding:7px;background:rgba(19,38,42,.93);backdrop-filter:blur(16px);border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,.22)}.bottom-nav button{border:0;background:transparent;color:#e7eeee;border-radius:14px;padding:8px 2px;font-size:10px;font-weight:800;white-space:nowrap}.bottom-nav button strong{display:block;font-size:17px;line-height:1.1;margin-bottom:3px}
+.bottom-nav{position:fixed;z-index:30;left:50%;bottom:max(10px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(720px,calc(100% - 24px));display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:7px;background:rgba(19,38,42,.93);backdrop-filter:blur(16px);border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,.22)}.bottom-nav button{border:0;background:transparent;color:#e7eeee;border-radius:14px;padding:8px 3px;font-size:11px;font-weight:800;white-space:nowrap}.bottom-nav button strong{display:block;font-size:18px;line-height:1.1;margin-bottom:3px}.bottom-nav button.active{background:rgba(255,255,255,.13);color:#fff}
 .sheet{display:none;position:fixed;z-index:50;inset:0;background:rgba(7,19,21,.42);padding:10vh 12px 12px}.sheet.open{display:flex;align-items:flex-end}.sheet-card{width:min(720px,100%);margin:auto;background:#fbfaf6;border-radius:24px;max-height:80vh;overflow:auto;padding:18px}.sheet-card h2{margin:0 0 10px}.sheet-card .close{float:right;border:0;background:#eceeea;border-radius:999px;width:34px;height:34px;font-size:18px}.map-list{display:grid;gap:9px}.map-list a{display:flex;justify-content:space-between;gap:10px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:13px;padding:11px 12px;font-size:13px}.map-list a span:last-child{color:var(--sea);font-weight:900}
 .hidden{display:none!important}.footer{padding:26px 18px 16px;color:#728184;font-size:12px;line-height:1.7;text-align:center}
 
@@ -46,10 +46,10 @@ h1{font-size:34px;line-height:1.14;margin:9px 0 10px;letter-spacing:-.04em}
 :root{--bg:#f4f0e9;--card:#fffdfa;--ink:#253237;--muted:#748083;--sea:#386f72;--sea2:#6b9997;--sky:#dfeae7;--sun:#d7a36b;--coral:#c97969;--line:#e6dfd5;--ok:#4d7862;--warn:#a3633f;--shadow:0 12px 32px rgba(48,59,59,.08)}
 body{background:#f4f0e9;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Helvetica Neue",Arial,sans-serif;font-weight:400;letter-spacing:-.012em}
 .shell{background:linear-gradient(180deg,#ece5dc 0,#f4f0e9 620px)}
-.hero{margin:12px 12px 8px;min-height:500px;padding:28px 22px 24px;border-radius:30px;background-image:linear-gradient(180deg,rgba(22,35,39,.06) 18%,rgba(22,35,39,.16) 46%,rgba(19,30,33,.88) 100%),url('assets/cappadocia-balloons-hero.jpg');background-size:cover;background-position:62% center;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 18px 42px rgba(42,47,45,.18)}
+.hero{margin:12px 12px 8px;min-height:280px;padding:28px 22px 24px;border-radius:30px;background-image:linear-gradient(180deg,rgba(22,35,39,.05) 12%,rgba(19,30,33,.82) 100%),url('assets/cappadocia-balloons-hero.jpg');background-size:cover;background-position:62% center;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 18px 42px rgba(42,47,45,.18)}
 .hero:after{display:none}.kicker{color:#fff;font-size:11px;font-weight:650;letter-spacing:.15em;text-shadow:0 1px 8px rgba(0,0,0,.28)}
 h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);font-weight:700;line-height:1.08;letter-spacing:-.055em;text-shadow:0 2px 18px rgba(0,0,0,.28)}
-.hero p{max-width:600px;color:rgba(255,255,255,.84);font-size:14px;line-height:1.65}.hero p b{color:#fff}
+.hero p{max-width:600px;color:rgba(255,255,255,.84);font-size:14px;line-height:1.65}.hero p b{color:#fff}.hero .route,.hero .top-actions{display:none}
 .route{margin-top:17px}.route span{padding:6px 9px;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(8px);font-weight:600}
 .top-actions{margin-top:16px}.top-actions button,.top-actions a{border:1px solid rgba(255,255,255,.3);box-shadow:none;transition:transform .15s,background .15s}.top-actions button:active,.top-actions a:active{transform:scale(.98)}.primary{background:#fff;color:#2c4447}.secondary{background:rgba(255,255,255,.12);color:#fff;backdrop-filter:blur(10px)}
 .notice{margin:12px 16px 8px;padding:12px 14px;background:#f8f4ee;border:1px solid #e4dacd;color:#705d4b;box-shadow:none}
@@ -62,30 +62,33 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
 .mapbtn,.routebtn,.softbtn{border-radius:999px}.mapbtn{background:#edf4f1}.routebtn{background:#faeee9}.tip{border-radius:14px;background:#f6f2eb}.tip.warn{background:#fbefe7}.tip.ok{background:#edf5ef}
 .antalya-feature{background:linear-gradient(145deg,#edf5f2,#fffdfa 55%,#f8eee6);border:1px solid #dce6e1;border-radius:24px;box-shadow:var(--shadow)}.chips span{background:rgba(255,255,255,.8);border-color:#dfe7e3}
 .info,.check,.hotel{background:#fffdfa;border:1px solid var(--line);box-shadow:0 5px 18px rgba(50,58,56,.045)}.check input{accent-color:#4e7f7e}.hotel a{background:#446f71}.bottom-nav{background:rgba(35,52,56,.94);border:1px solid rgba(255,255,255,.12);box-shadow:0 14px 34px rgba(26,36,38,.24)}.bottom-nav button{color:#edf3f1}.sheet-card{background:#f7f3ed}.map-list a{background:#fffdfa;border-color:var(--line)}.footer{color:#7b8281}
+.view-hidden{display:none!important}.view-intro{padding:25px 18px 5px}.view-intro .kicker{color:var(--coral);text-shadow:none}.view-intro h1{margin:6px 0 4px;color:var(--ink);font-size:30px;text-shadow:none}.view-intro p{margin:0;color:var(--muted);line-height:1.6}.check-group-title{margin:13px 2px 2px;font-size:15px;color:#41585a}.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quick-card{background:#fffdfa;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 5px 18px rgba(50,58,56,.045)}.quick-card b{display:block;margin-bottom:5px;font-size:14px}.quick-card span{display:block;color:var(--muted);font-size:12px;line-height:1.55}.quick-card a,.quick-card button{display:inline-block;margin-top:9px;border:0;border-radius:999px;padding:7px 9px;background:#edf4f1;color:#41696a;text-decoration:none;font-size:11px;font-weight:800}.weather-control{margin:10px 0 14px;padding:14px;border-radius:18px;background:linear-gradient(135deg,#3d7173,#294f55);color:#fff}.weather-control b{display:block;margin-bottom:4px}.weather-control span{display:block;color:rgba(255,255,255,.76);font-size:12px}.weather-control button{margin-top:10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 11px;background:rgba(255,255,255,.12);color:#fff;font-weight:800}.home-weather{margin-top:10px}.home-weather:empty{display:none}
 @media(hover:hover){.day:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(48,59,59,.11)}.mapbtn:hover,.routebtn:hover,.softbtn:hover{filter:brightness(.97)}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-@media(min-width:620px){.hero{min-height:540px;padding:42px 34px 32px;background-position:center 52%}.section{padding-left:24px;padding-right:24px}.grid2{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:620px){.hero{min-height:340px;padding:42px 34px 32px;background-position:center 52%}.section{padding-left:24px;padding-right:24px}.grid2{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
 <body>
 <div class="shell">
-<header class="hero" id="top">
+<header class="hero" id="top" data-view="home">
   <div class="kicker">Türkiye · Sep 26 — Oct 8, 2026</div>
-  <h1>여행 중에 바로 보는<br>튀르키예 컴패니언</h1>
-  <p>이스탄불 → 카파도키아 → <b>안탈리아</b> → 파묵칼레 → 이스탄불. 장소 누르면 바로 구글맵 리뷰로 연결돼.</p>
+  <h1>오늘의<br>튀르키예</h1>
+  <p>현지 날짜에 맞춰 오늘 필요한 일정과 날씨만 보여줄게.</p>
   <div class="route"><span>IST 이스탄불</span><span>ASR 카파도키아</span><span>AYT 안탈리아</span><span>DNZ 파묵칼레</span></div>
   <div class="top-actions"><button class="primary" onclick="goToday()">📍 오늘 일정 보기</button><button class="secondary" onclick="openSheet('mapSheet')">🗺️ 장소 모아보기</button></div>
 </header>
-<div class="notice">✦ <b>현지 운영시간·투어 픽업은 바우처 우선.</b></div>
-<nav class="tabs" id="tabs">
-  <button class="active" data-filter="all">전체</button><button data-filter="istanbul">이스탄불</button><button data-filter="cappadocia">카파도키아</button><button data-filter="antalya">안탈리아</button><button data-filter="pamukkale">파묵칼레</button>
+<div class="notice" data-view="home">✦ <b>현지 운영시간·투어 픽업은 바우처 우선.</b></div>
+<div class="view-intro" data-view="schedule"><div class="kicker">ITINERARY</div><h1>전체 일정</h1><p>도시를 선택하면 해당 구간만 모아볼 수 있어.</p></div>
+<nav class="tabs" id="tabs" data-view="schedule">
+  <button class="active" data-filter="all">전체</button><button data-filter="istanbul1">이스탄불①</button><button data-filter="cappadocia">카파도키아</button><button data-filter="antalya">안탈리아</button><button data-filter="pamukkale">파묵칼레</button><button data-filter="istanbul2">이스탄불②</button>
 </nav>
 
-<section class="section" id="todaySection">
+<section class="section" id="todaySection" data-view="home">
   <div id="todayCard" class="today-card"><div class="mini">여행 전</div><h2>9월 26일부터 시작!</h2><p>출발 전에는 아래 체크리스트랑 예약 확정사항만 보면 돼.</p></div>
+  <div id="todayWeather" class="home-weather"></div>
 </section>
 
-<section class="section city-section" data-city="antalya" id="antalya-guide">
+<section class="section city-section" data-phase="antalya" id="antalya-guide" data-view="schedule">
   <div class="section-title"><h2>🌊 안탈리아 업그레이드</h2><small>10/2–10/5</small></div>
   <div class="antalya-feature">
     <h3>“구시가지 + 바다 + 섬투어”로 역할 분담</h3>
@@ -100,10 +103,10 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
   </div>
 </section>
 
-<main class="section" id="schedule">
-  <div class="section-title"><h2>전체 일정</h2><small>장소 → 구글맵 리뷰</small></div>
+<main class="section" id="schedule" data-view="schedule">
+  <div class="section-title"><h2>날짜별 일정</h2><small>장소 → 구글맵 리뷰</small></div>
 
-  <article class="day" data-city="istanbul" data-date="2026-09-26" id="d0926">
+  <article class="day" data-phase="istanbul1" data-date="2026-09-26" id="d0926">
     <div class="day-head"><div><div class="date">9/26 토</div><h3>이스탄불 도착</h3></div><span class="city-badge">ISTANBUL</span></div>
     <div class="timeline">
       <div class="row"><div class="time">17:00</div><div class="what"><b>IST 도착</b><div class="sub">입국·수하물 → 첫 Airbnb 체크인</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Istanbul+Airport+IST" target="_blank">⭐ 지도·리뷰</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Kucuk+Ayasofya+Mahallesi+Sehit+Mehmet+Pasa+Sokak+No+21+Fatih+Istanbul" target="_blank">🏠 숙소</a></div></div></div>
@@ -112,7 +115,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <div class="tip">9/28 새벽 공항 이동이 있어서 첫날은 욕심 금지. 여행 초반부터 체력 대출받으면 이자가 셈 😇</div>
   </article>
 
-  <article class="day" data-city="istanbul" data-date="2026-09-27" id="d0927">
+  <article class="day" data-phase="istanbul1" data-date="2026-09-27" id="d0927">
     <div class="day-head"><div><div class="date">9/27 일</div><h3>돌마바흐체 → 베식타시 → 발랏</h3></div><span class="city-badge">ISTANBUL</span></div>
     <div class="timeline">
       <div class="row"><div class="time">09:00</div><div class="what"><b>돌마바흐체 궁전</b><div class="sub">2–3시간</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Dolmabahce+Palace+Istanbul" target="_blank">⭐ 리뷰</a></div></div></div>
@@ -121,7 +124,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     </div>
   </article>
 
-  <article class="day" data-city="cappadocia" data-date="2026-09-28" id="d0928">
+  <article class="day" data-phase="cappadocia" data-date="2026-09-28" id="d0928">
     <div class="day-head"><div><div class="date">9/28 월</div><h3>카파도키아 도착 + 로즈밸리 일몰</h3></div><span class="city-badge">CAPPADOCIA</span></div>
     <div class="timeline">
       <div class="row"><div class="time">08:25</div><div class="what">IST → ASR 09:50<div class="sub">도착 후 게이트 밖에서 영문 이름표를 든 <b>KAPPADOCIA TRANS</b> 드라이버 찾기</div></div></div>
@@ -133,7 +136,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <div class="tip warn"><strong>픽업 주의:</strong> 16:45까지 집결지 도착 권장. “Goreme Municipality”를 검색하고, 버스터미널 건너편 건물 앞 깃발 아래에서 기다려.</div>
   </article>
 
-  <article class="day" data-city="cappadocia" data-date="2026-09-29" id="d0929">
+  <article class="day" data-phase="cappadocia" data-date="2026-09-29" id="d0929">
     <div class="day-head"><div><div class="date">9/29 화</div><h3>벌룬 1차 + 그린투어</h3></div><span class="city-badge">CAPPADOCIA</span></div>
     <div class="timeline">
       <div class="row"><div class="time">새벽</div><div class="what"><b>열기구 1차 시도</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia+balloons" target="_blank">주변 보기</a></div></div></div>
@@ -143,7 +146,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <div class="tip"><strong>숙소가 괴레메 밖이라면:</strong> 투어 업체에 미리 알려 호텔 선픽업을 요청해. 괴레메 숙박이면 위 집결지로 직접 이동.</div>
   </article>
 
-  <article class="day" data-city="cappadocia" data-date="2026-09-30" id="d0930">
+  <article class="day" data-phase="cappadocia" data-date="2026-09-30" id="d0930">
     <div class="day-head"><div><div class="date">9/30 수</div><h3>렌터카 레드루트</h3></div><span class="city-badge">CAPPADOCIA</span></div>
     <div class="timeline">
       <div class="row"><div class="time">10:00</div><div class="what">렌터카 인수 → <b>Çavuşin · Paşabağ</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Cavusin+Cappadocia" target="_blank">Çavuşin</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Pasabag+Cappadocia" target="_blank">Paşabağ</a></div></div></div>
@@ -152,7 +155,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     </div>
   </article>
 
-  <article class="day" data-city="cappadocia" data-date="2026-10-01" id="d1001">
+  <article class="day" data-phase="cappadocia" data-date="2026-10-01" id="d1001">
     <div class="day-head"><div><div class="date">10/1 목</div><h3>벌룬 예비 3차 + 선택 일정</h3></div><span class="city-badge">CAPPADOCIA</span></div>
     <div class="timeline">
       <div class="row"><div class="time">오전</div><div class="what"><b>Uçhisar Castle</b> 또는 Göreme Open Air Museum<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Uchisar+Castle" target="_blank">Uçhisar</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Goreme+Open+Air+Museum" target="_blank">야외박물관</a></div></div></div>
@@ -162,7 +165,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <div class="tip warn"><strong>중단 기준:</strong> 지도상 괴레메 복귀가 21시 넘거나 피곤하면 소금호수 일몰은 포기. 다음날 비행이 더 중요!</div>
   </article>
 
-  <article class="day" data-city="antalya" data-date="2026-10-02" id="d1002">
+  <article class="day" data-phase="antalya" data-date="2026-10-02" id="d1002">
     <div class="day-head"><div><div class="date">10/2 금</div><h3>안탈리아 ① 칼레이치 + 가까운 바다</h3></div><span class="city-badge">ANTALYA</span></div>
     <div class="timeline">
       <div class="row"><div class="time">09:50</div><div class="what"><b>AYT 도착</b> → 택시로 Kaleiçi<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Antalya+Airport+AYT" target="_blank">공항</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=House+of+Good+Things+Antalya" target="_blank">🏠 호텔 리뷰</a></div></div></div>
@@ -175,7 +178,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <details class="details"><summary>왜 이렇게 바꿨냐면</summary><p>기존 일정은 하드리아누스의 문·옛 항구·카라알리올루만 있어서 오후가 살짝 비었어. 숙소 바로 근처의 Mermerli Beach를 옵션으로 넣으면 이동 추가 없이 지중해 첫날 느낌을 확 살릴 수 있어.</p></details>
   </article>
 
-  <article class="day" data-city="antalya" data-date="2026-10-03" id="d1003">
+  <article class="day" data-phase="antalya" data-date="2026-10-03" id="d1003">
     <div class="day-head"><div><div class="date">10/3 토</div><h3>안탈리아 ② 술루아다 풀데이</h3></div><span class="city-badge">ANTALYA</span></div>
     <div class="timeline">
       <div class="row"><div class="time">아침</div><div class="what"><b>칼레이치 픽업</b> → Adrasan Harbour<div class="sub">실제 시간·승차 핀은 예약 바우처가 최우선</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Adrasan+Harbour+Antalya" target="_blank">항구 리뷰</a><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Suluada+Turkey" target="_blank">Suluada</a></div></div></div>
@@ -186,7 +189,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <details class="details"><summary>현재 확인해둔 운영 메모</summary><ul><li>Antalya 출발 술루아다 상품 중 일부는 10월에 화·목·토 운항을 안내하고 있어 10/3 토요일과 맞아.</li><li>모든 배는 Adrasan Harbour에서 출항하므로 “안탈리아 구항에서 바로 배 타는 투어”로 착각하면 안 돼.</li><li>네가 실제 예약한 상품의 픽업 포함 여부와 칼레이치 승차 핀은 반드시 바우처 기준.</li></ul></details>
   </article>
 
-  <article class="day" data-city="antalya" data-date="2026-10-04" id="d1004">
+  <article class="day" data-phase="antalya" data-date="2026-10-04" id="d1004">
     <div class="day-head"><div><div class="date">10/4 일</div><h3>안탈리아 ③ Lower Düden + 로컬 점심 + 콘얄트</h3></div><span class="city-badge">ANTALYA</span></div>
     <div class="timeline">
       <div class="row"><div class="time">09:30</div><div class="what"><b>Lower Düden Waterfall</b><div class="sub">바다 절벽으로 바로 떨어지는 쪽. Upper Düden이랑 다름!</div><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Lower+Duden+Waterfalls+Antalya" target="_blank">⭐ 리뷰</a></div></div></div>
@@ -198,7 +201,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <details class="details"><summary>플랜 B · 10/3 술루아다 취소 시</summary><p>10/4로 술루아다 변경이 실제로 가능할 때만 바꾸고, 폭포·피야즈·콘얄트는 과감히 포기. 좌석 없거나 날씨가 계속 안 좋으면 이 도시 일정 그대로 진행해. Antalya Archaeology Museum은 현재 임시 휴관 표시라 우천 대체로 넣지 않았어.</p></details>
   </article>
 
-  <article class="day" data-city="antalya pamukkale" data-date="2026-10-05" id="d1005">
+  <article class="day" data-phase="antalya pamukkale" data-date="2026-10-05" id="d1005">
     <div class="day-head"><div><div class="date">10/5 월</div><h3>안탈리아 → 파묵칼레</h3></div><span class="city-badge">ANTALYA → PAM</span></div>
     <div class="timeline">
       <div class="row"><div class="time">08:00</div><div class="what"><b>Antalya Otogarı 도착 목표</b><div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Antalya+Otogar" target="_blank">터미널</a></div></div></div>
@@ -208,7 +211,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     </div>
   </article>
 
-  <article class="day" data-city="istanbul" data-date="2026-10-06" id="d1006">
+  <article class="day" data-phase="istanbul2" data-date="2026-10-06" id="d1006">
     <div class="day-head"><div><div class="date">10/6 화</div><h3>이스탄불 복귀 + 블루모스크·쇼핑</h3></div><span class="city-badge">ISTANBUL</span></div>
     <div class="timeline">
       <div class="row"><div class="time">08:25</div><div class="what">DNZ → IST 09:45</div></div>
@@ -217,7 +220,7 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     </div>
   </article>
 
-  <article class="day" data-city="istanbul" data-date="2026-10-07" id="d1007">
+  <article class="day" data-phase="istanbul2" data-date="2026-10-07" id="d1007">
     <div class="day-head"><div><div class="date">10/7 수</div><h3>톱카프 핵심 + 귀국</h3></div><span class="city-badge">ISTANBUL</span></div>
     <div class="timeline">
       <div class="row"><div class="time">09:00</div><div class="what"><b>Topkapı Palace</b> 핵심 관람<div class="place-actions"><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Topkapi+Palace+Istanbul" target="_blank">⭐ 리뷰</a></div></div></div>
@@ -228,7 +231,24 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
   </article>
 </main>
 
-<section class="section" id="hotels">
+<section class="section" id="travelInfo" data-view="info">
+  <div class="section-title"><h2>여행 중 바로 쓰는 정보</h2><small>현장용</small></div>
+  <div class="weather-control">
+    <b>날씨 자동 업데이트</b>
+    <span id="weatherStatus">최신 예보를 불러오는 중…</span>
+    <button type="button" onclick="renderWeather(true)">↻ 지금 새로고침</button>
+  </div>
+  <div class="quick-grid">
+    <div class="quick-card"><b>🆘 긴급전화</b><span>경찰·구급·소방 통합 112</span><a href="tel:112">112 전화</a></div>
+    <div class="quick-card"><b>💳 결제</b><span>카드 위주 + 소액 TRY 현금. 해외결제 차단 여부 확인.</span></div>
+    <div class="quick-card"><b>🔌 콘센트</b><span>220V · C/F형. 한국 플러그 대부분 그대로 사용.</span></div>
+    <div class="quick-card"><b>🗺️ 장소 모음</b><span>안탈리아 숙소·해변·폭포·식당 링크.</span><button type="button" onclick="openSheet('mapSheet')">지도 열기</button></div>
+    <div class="quick-card"><b>💬 짧은 터키어</b><span>Merhaba 안녕하세요<br>Teşekkürler 감사합니다<br>Yardım lütfen 도와주세요</span></div>
+    <div class="quick-card"><b>🚕 이동 팁</b><span>택시는 미터기 사용 확인. 공항·투어 픽업은 바우처 우선.</span></div>
+  </div>
+</section>
+
+<section class="section" id="hotels" data-view="info">
   <div class="section-title"><h2>숙소 바로가기</h2><small>리뷰/위치</small></div>
   <div class="hotel"><div><b>이스탄불 · 첫 Airbnb</b><small>Küçük Ayasofya</small></div><a href="https://www.google.com/maps/search/?api=1&query=Kucuk+Ayasofya+Mahallesi+Sehit+Mehmet+Pasa+Sokak+No+21+Fatih+Istanbul" target="_blank">지도</a></div>
   <div class="hotel"><div><b>Elegance Cave Suites</b><small>Göreme · 9/28–10/2</small></div><a href="https://www.google.com/maps/search/?api=1&query=Elegance+Cave+Suites+Goreme" target="_blank">리뷰</a></div>
@@ -237,8 +257,9 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
   <div class="hotel"><div><b>이스탄불 · 마지막 Airbnb</b><small>Emin Sinan · Tülcü Sokak No:23</small></div><a href="https://www.google.com/maps/search/?api=1&query=Emin+Sinan+Tulcu+Sokak+No+23+Fatih+Istanbul" target="_blank">지도</a></div>
 </section>
 
-<section class="section" id="checklist">
-  <div class="section-title"><h2>출발 전 / 현장 체크</h2><small>자동 저장</small></div>
+<section class="section" id="checklist" data-view="prep">
+  <div class="view-intro"><div class="kicker">PACKING</div><h1>준비물</h1><p>체크 상태는 이 기기에 자동으로 저장돼.</p></div>
+  <div class="section-title"><h2>예약·현장 확인</h2><small>자동 저장</small></div>
   <div class="checks" id="checks">
     <div class="check"><input id="c1" type="checkbox"><label for="c1">9/28 ASR 도착 후 KAPPADOCIA TRANS 영문 이름표 확인 · 못 찾으면 차량에서 “리얼터키” 문의</label></div>
     <div class="check"><input id="c2" type="checkbox"><label for="c2">9/28 16:45까지 Göreme Municipality 건물 앞 깃발 아래 도착</label></div>
@@ -248,18 +269,26 @@ h1{max-width:620px;margin:10px 0 12px;color:#fff;font-size:clamp(34px,8vw,52px);
     <div class="check"><input id="c6" type="checkbox"><label for="c6">10/5 버스 승강장/회사 최종 확인</label></div>
     <div class="check"><input id="c7" type="checkbox"><label for="c7">10/6 새벽 Pamukkale → DNZ 픽업 확정</label></div>
     <div class="check"><input id="c8" type="checkbox"><label for="c8">10/7 마지막 Airbnb 체크아웃 후 짐 보관 확인</label></div>
+    <h3 class="check-group-title">짐 챙기기</h3>
+    <div class="check"><input id="c9" type="checkbox"><label for="c9">여권 · 항공권 · 숙소/투어 바우처 오프라인 저장</label></div>
+    <div class="check"><input id="c10" type="checkbox"><label for="c10">해외결제 카드 2장 · 소액 현금 · 카드사 앱 확인</label></div>
+    <div class="check"><input id="c11" type="checkbox"><label for="c11">eSIM/로밍 · 보조배터리 · 충전 케이블</label></div>
+    <div class="check"><input id="c12" type="checkbox"><label for="c12">카파도키아 새벽용 가벼운 재킷 · 레이어드 상의</label></div>
+    <div class="check"><input id="c13" type="checkbox"><label for="c13">안탈리아 수영복 · 타월 · 방수팩 · 선크림</label></div>
+    <div class="check"><input id="c14" type="checkbox"><label for="c14">걷기 편한 신발 · 모자 · 선글라스 · 접이식 우산</label></div>
+    <div class="check"><input id="c15" type="checkbox"><label for="c15">상비약 · 처방약 · 밴드 · 멀미약</label></div>
+    <div class="check"><input id="c16" type="checkbox"><label for="c16">여권 사본 · 여행자보험 증서 · 비상연락처</label></div>
   </div>
 </section>
 
-<div class="footer">일정 기준: 업로드한 2026.09.22 여행 가이드. 현지에서 바뀌는 운영시간·픽업·날씨는 예약 바우처와 당일 안내가 우선이야.<br>일정·체크리스트는 오프라인에서도 열리고, 지도/리뷰와 최신 날씨 갱신에는 인터넷이 필요해.</div>
+<div class="footer" data-view="info">일정 기준: 업로드한 2026.09.22 여행 가이드. 현지에서 바뀌는 운영시간·픽업·날씨는 예약 바우처와 당일 안내가 우선이야.<br>일정·체크리스트는 오프라인에서도 열리고, 지도/리뷰와 최신 날씨 갱신에는 인터넷이 필요해.</div>
 </div>
 
 <div class="bottom-nav">
-  <button onclick="goToday()" aria-label="오늘 일정으로 이동"><strong>📍</strong>오늘</button>
-  <button onclick="jumpToDay('d0926')" aria-label="첫 이스탄불 일정으로 이동"><strong>◐</strong>이스탄불①</button>
-  <button onclick="jumpToDay('d0928')" aria-label="카파도키아 일정으로 이동"><strong>🎈</strong>카파도키아</button>
-  <button onclick="jumpToDay('d1002')" aria-label="안탈리아 일정으로 이동"><strong>🌊</strong>안탈리아</button>
-  <button onclick="jumpToDay('d1006')" aria-label="마지막 이스탄불 일정으로 이동"><strong>◑</strong>이스탄불②</button>
+  <button class="active" data-nav="home" onclick="setView('home')" aria-label="오늘 화면"><strong>📍</strong>오늘</button>
+  <button data-nav="schedule" onclick="setView('schedule')" aria-label="전체 일정 화면"><strong>🗓️</strong>일정</button>
+  <button data-nav="prep" onclick="setView('prep')" aria-label="준비물 화면"><strong>✓</strong>준비물</button>
+  <button data-nav="info" onclick="setView('info')" aria-label="여행정보 화면"><strong>ⓘ</strong>여행정보</button>
 </div>
 
 <div class="sheet" id="mapSheet" onclick="if(event.target===this)closeSheet('mapSheet')">
@@ -295,30 +324,34 @@ function turkeyDate(){
   const o={};parts.forEach(p=>o[p.type]=p.value);return `${o.year}-${o.month}-${o.day}`;
 }
 function goToday(){
-  const key=turkeyDate(), ids=tripDays[key];
-  showAllDays();
-  if(ids){document.getElementById(ids[0]).scrollIntoView({behavior:'smooth',block:'center'});}
-  else if(key<firstTripDate){document.getElementById(tripDays[firstTripDate][0]).scrollIntoView({behavior:'smooth',block:'center'});}
-  else{document.getElementById(tripDays[lastTripDate][0]).scrollIntoView({behavior:'smooth',block:'center'});}
+  setView('home');
 }
 function showAllDays(){
   document.querySelectorAll('#tabs button').forEach(btn=>btn.classList.toggle('active',btn.dataset.filter==='all'));
   document.querySelectorAll('.day,.city-section').forEach(el=>el.classList.remove('hidden'));
 }
 function jumpToDay(id){
+  setView('schedule');
   showAllDays();
   document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function setView(view,updateHash=true){
+  const valid=['home','schedule','prep','info'];if(!valid.includes(view))view='home';
+  document.querySelectorAll('[data-view]').forEach(el=>el.classList.toggle('view-hidden',el.dataset.view!==view));
+  document.querySelectorAll('.bottom-nav button').forEach(btn=>btn.classList.toggle('active',btn.dataset.nav===view));
+  if(updateHash)history.replaceState(null,'','#'+view);
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 function renderToday(){
   const key=turkeyDate(), card=document.getElementById('todayCard'), ids=tripDays[key];
   document.querySelectorAll('.day').forEach(day=>day.classList.toggle('is-today',day.dataset.date===key));
   if(key<firstTripDate){
     const days=Math.ceil((Date.parse(firstTripDate+'T00:00:00Z')-Date.parse(key+'T00:00:00Z'))/86400000);
-    card.innerHTML=`<div class="mini">튀르키예 현지 날짜 기준 · D-${days}</div><h2>여행까지 ${days}일 남았어</h2><p>9월 26일 이스탄불에서 시작! 출발 전 예약과 체크리스트를 한 번씩 확인해.</p><div class="today-buttons"><a href="#d0926">첫날 일정 미리보기</a><a href="#checklist">출발 전 체크</a></div>`;
+    card.innerHTML=`<div class="mini">튀르키예 현지 날짜 기준 · D-${days}</div><h2>여행까지 ${days}일 남았어</h2><p>9월 26일 이스탄불에서 시작! 오늘은 예약 확인과 짐 체크를 한 번씩 보면 돼.</p><div class="today-buttons"><a href="#schedule" onclick="jumpToDay('d0926');return false">첫날 일정</a><a href="#prep" onclick="setView('prep');return false">준비물 확인</a></div>`;
     return;
   }
   if(key>lastTripDate){
-    card.innerHTML='<div class="mini">여행 일정 완료</div><h2>튀르키예 여행, 잘 다녀왔어!</h2><p>일정과 체크 기록은 이 페이지에 그대로 남아 있어.</p><div class="today-buttons"><a href="#schedule">전체 일정 다시 보기</a></div>';
+    card.innerHTML='<div class="mini">여행 일정 완료</div><h2>튀르키예 여행, 잘 다녀왔어!</h2><p>일정과 체크 기록은 이 페이지에 그대로 남아 있어.</p><div class="today-buttons"><a href="#schedule" onclick="setView(\'schedule\');return false">전체 일정 다시 보기</a></div>';
     return;
   }
   if(!ids)return;
@@ -332,7 +365,7 @@ function renderToday(){
     what.querySelectorAll('.place-actions,.sub').forEach(el=>el.remove());
     return `<div class="today-preview-item"><b>${time}</b><span>${what.textContent.trim()}</span></div>`;
   }).join('');
-  card.innerHTML=`<div class="mini">TODAY · 튀르키예 현지 날짜 기준</div><h2>${titles}</h2><p>${cities} · 오늘 필요한 일정만 위에 모아뒀어.</p><div class="today-preview">${preview}</div><div class="today-buttons"><a href="#${ids[0]}">상세 일정</a><a href="#checklist">체크리스트</a></div>`;
+  card.innerHTML=`<div class="mini">TODAY · 튀르키예 현지 날짜 기준</div><h2>${titles}</h2><p>${cities} · 오늘 필요한 일정만 위에 모아뒀어.</p><div class="today-preview">${preview}</div><div class="today-buttons"><a href="#schedule" onclick="jumpToDay('${ids[0]}');return false">상세 일정</a><a href="#prep" onclick="setView('prep');return false">준비물</a></div>`;
 }
 function weatherInfo(code){
   if(code===0)return ['☀️','맑음'];if(code<=2)return ['🌤️','대체로 맑음'];if(code===3)return ['☁️','흐림'];if(code===45||code===48)return ['🌫️','안개'];if(code>=51&&code<=67)return ['🌧️','비'];if(code>=71&&code<=77)return ['🌨️','눈'];if(code>=80&&code<=82)return ['🌦️','소나기'];if(code>=85&&code<=86)return ['🌨️','눈 소나기'];if(code>=95)return ['⛈️','뇌우'];return ['🌤️','날씨'];
@@ -348,26 +381,38 @@ function setWeather(card,data,placeKey){
   const code=data.daily.weather_code[idx],max=Math.round(data.daily.temperature_2m_max[idx]),min=Math.round(data.daily.temperature_2m_min[idx]),rain=data.daily.precipitation_probability_max[idx]??0,[icon,label]=weatherInfo(code);
   strip.className='weather-strip';strip.innerHTML=`<span class="weather-icon">${icon}</span><div class="weather-main"><b>${place.name} · ${label} · ${min}° / ${max}°</b><span>강수 ${rain}% · </span><span class="weather-style">${stylingTip(min,max,rain,placeKey)}</span></div><a class="weather-source" href="https://open-meteo.com/" target="_blank">예보 ↗</a>`;
 }
-async function renderWeather(){
+function setHomeWeather(data,placeKey){
+  const date=turkeyDate(),box=document.getElementById('todayWeather');if(!tripDays[date]||weatherPlaceByDate[date]!==placeKey){return;}
+  const idx=data?.daily?.time?.indexOf(date)??-1;if(idx<0)return;
+  const place=weatherPlaces[placeKey],code=data.daily.weather_code[idx],max=Math.round(data.daily.temperature_2m_max[idx]),min=Math.round(data.daily.temperature_2m_min[idx]),rain=data.daily.precipitation_probability_max[idx]??0,[icon,label]=weatherInfo(code);
+  box.innerHTML=`<div class="weather-strip"><span class="weather-icon">${icon}</span><div class="weather-main"><b>오늘 ${place.name} · ${label} · ${min}° / ${max}°</b><span>강수 ${rain}% · </span><span class="weather-style">${stylingTip(min,max,rain,placeKey)}</span></div></div>`;
+}
+async function renderWeather(force=false){
   const cards=[...document.querySelectorAll('.day[data-date]')];
+  const status=document.getElementById('weatherStatus');if(status)status.textContent=force?'최신 예보로 갱신하는 중…':'최신 예보를 불러오는 중…';
   cards.forEach(card=>setWeather(card,null,weatherPlaceByDate[card.dataset.date]));
+  let latestSavedAt=0;
   await Promise.all(Object.entries(weatherPlaces).map(async([key,place])=>{
-    const cacheKey='turkiye-weather-'+key;let data=null;
-    try{const cached=JSON.parse(localStorage.getItem(cacheKey));if(cached&&Date.now()-cached.savedAt<10800000)data=cached.data;}catch(e){}
-    try{if(!data){const url=`https://api.open-meteo.com/v1/forecast?latitude=${place.lat}&longitude=${place.lon}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Europe%2FIstanbul&forecast_days=16`;const response=await fetch(url);if(!response.ok)throw new Error('weather');data=await response.json();localStorage.setItem(cacheKey,JSON.stringify({savedAt:Date.now(),data}));}}catch(e){try{data=JSON.parse(localStorage.getItem(cacheKey))?.data}catch(ignore){}}
+    const cacheKey='turkiye-weather-'+key;let data=null,cached=null;
+    try{cached=JSON.parse(localStorage.getItem(cacheKey));if(!force&&cached&&Date.now()-cached.savedAt<1800000){data=cached.data;latestSavedAt=Math.max(latestSavedAt,cached.savedAt);}}catch(e){}
+    try{if(!data){const url=`https://api.open-meteo.com/v1/forecast?latitude=${place.lat}&longitude=${place.lon}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Europe%2FIstanbul&forecast_days=16`;const response=await fetch(url);if(!response.ok)throw new Error('weather');data=await response.json();const savedAt=Date.now();localStorage.setItem(cacheKey,JSON.stringify({savedAt,data}));latestSavedAt=Math.max(latestSavedAt,savedAt);}}catch(e){if(cached){data=cached.data;latestSavedAt=Math.max(latestSavedAt,cached.savedAt);}}
     cards.filter(card=>weatherPlaceByDate[card.dataset.date]===key).forEach(card=>setWeather(card,data,key));
+    setHomeWeather(data,key);
   }));
+  if(status){if(latestSavedAt){const time=new Intl.DateTimeFormat('ko-KR',{timeZone:'Europe/Istanbul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(latestSavedAt));status.textContent=`마지막 갱신 ${time} · 30분마다 자동 업데이트`;}else{status.textContent='현재 예보를 불러오지 못했어. 인터넷 연결 후 다시 시도해줘.';}}
 }
 function openSheet(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden'}
 function closeSheet(id){document.getElementById(id).classList.remove('open');document.body.style.overflow=''}
 document.querySelectorAll('#tabs button').forEach(btn=>btn.addEventListener('click',()=>{
   document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
-  const f=btn.dataset.filter;document.querySelectorAll('.day').forEach(day=>day.classList.toggle('hidden',f!=='all'&&!day.dataset.city.split(' ').includes(f)));
-  document.querySelectorAll('.city-section').forEach(sec=>sec.classList.toggle('hidden',f!=='all'&&sec.dataset.city!==f));
+  const f=btn.dataset.filter;document.querySelectorAll('.day').forEach(day=>day.classList.toggle('hidden',f!=='all'&&!day.dataset.phase.split(' ').includes(f)));
+  document.querySelectorAll('.city-section').forEach(sec=>sec.classList.toggle('hidden',f!=='all'&&sec.dataset.phase!==f));
 }));
 document.querySelectorAll('#checks input').forEach(cb=>{const k='turkiye-'+cb.id;cb.checked=localStorage.getItem(k)==='1';cb.addEventListener('change',()=>localStorage.setItem(k,cb.checked?'1':'0'))});
 renderToday();
+setView(location.hash.slice(1),false);
 renderWeather();
+setInterval(()=>renderWeather(true),1800000);
 </script>
 </body>
 </html>
